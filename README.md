@@ -63,3 +63,37 @@ where `content` is the file read client-side as a base64 data URL — not a
 multipart upload. Keep resumes/CVs under a few MB: Vercel's default
 serverless request-body limit is 4.5MB, and base64 adds ~33% overhead on top
 of the raw file size.
+
+### Preventing duplicate submissions
+
+None of the 4 submit buttons disable themselves while a request is in
+flight, so clicking Submit more than once before the first request finishes
+fires a completely separate submission each time — duplicate emails, same
+attachment. Each submit handler in the design tool's source should guard
+against this with an early return, right after `e.preventDefault();`:
+
+```js
+submitContact = (e) => {
+  e.preventDefault();
+  if (this.state.contactStatus === "sending") return;
+  // ...rest of the handler unchanged
+};
+
+submitClient = (e) => {
+  e.preventDefault();
+  if (this.state.clientStatus === "sending") return;
+  // ...rest of the handler unchanged
+};
+
+submitJoinDesk = (e) => {
+  e.preventDefault();
+  if (this.state.joinDeskStatus === "sending") return;
+  // ...rest of the handler unchanged
+};
+
+submitCandidate = (e) => {
+  e.preventDefault();
+  if (this.state.candidateStatus === "sending") return;
+  // ...rest of the handler unchanged
+};
+```
