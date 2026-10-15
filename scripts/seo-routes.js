@@ -21,6 +21,7 @@ export const ORG = {
   description:
     "Paterson is a retained executive search firm placing senior construction and real estate leaders in New York, Miami and Dubai.",
   email: "info@patersoncompany.com",
+  sameAs: ["https://www.linkedin.com/company/patersoncompany/"],
   areaServed: ["New York", "Miami", "Dubai"],
   knowsAbout: ["Executive search", "Construction recruitment", "Real estate recruitment"],
 };
