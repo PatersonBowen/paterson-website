@@ -1,5 +1,17 @@
 {
+  "buildCommand": "node scripts/build.js",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/privacy-policy", "destination": "/privacy", "permanent": true },
+    { "source": "/terms-and-conditions", "destination": "/terms", "permanent": true },
+    { "source": "/about", "destination": "/team", "permanent": true },
+    { "source": "/about-us", "destination": "/team", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
+    { "source": "/jobs/:slug", "destination": "/_job.html" }
   ]
 }

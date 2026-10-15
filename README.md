@@ -17,6 +17,23 @@ share one origin — no cross-origin config needed.
     the site's 4 forms as email via Resend
   - `api/_lib/resend.js` — shared Resend helper (not a route)
 
+## SEO build (runs on every Vercel deploy)
+
+`vercel.json` runs `node scripts/build.js`, which writes the deployable site to `public/`
+(git-ignored). It reads `index.html` and, for each route, adds that page's own title,
+description, canonical, robots, Open Graph tags, JSON-LD and a crawler-readable body
+(h1, summary, real links). It also patches the bundle bootstrap so those head tags survive
+the document swap (otherwise the rendered page has no title or description).
+
+- Page metadata lives in **`scripts/seo-routes.js`** — edit titles/descriptions there.
+  `index: false` = noindex and left out of the sitemap (currently /testimonials, /termsofbusiness).
+- `/sitemap.xml` is `api/sitemap.js` (static pages + live Airtable roles). `robots.txt` and
+  `llms.txt` are copied as-is.
+- The build is idempotent, so a fresh export from the design tool is fixed up on deploy.
+  The click-through `href`s and `updateSeo` (title changes while browsing) are hand-patches in
+  the template and must be re-applied after a re-export.
+- Run `node scripts/build.js` locally to preview `public/`.
+
 ## Deploy (Vercel)
 
 1. Import this repo into a Vercel project. Root Directory should be the repo
