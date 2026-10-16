@@ -109,16 +109,6 @@ export const ROUTES = [
     body: "We're growing the team across New York and Miami. If you bill, know the construction and real estate market, and want a focused desk of your own — we should talk.",
   },
   {
-    key: "testimonials",
-    path: "/testimonials",
-    nav: "Stories",
-    title: "Client & Candidate Stories | Paterson",
-    description: "What clients and candidates say about working with Paterson.",
-    h1: "What clients and candidates say.",
-    body: "Quotes from people who hired through Paterson or moved through Paterson.",
-    index: false,
-  },
-  {
     key: "terms",
     path: "/terms",
     nav: "Terms & Conditions",

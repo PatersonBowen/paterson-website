@@ -26,7 +26,8 @@ description, canonical, robots, Open Graph tags, JSON-LD and a crawler-readable 
 the document swap (otherwise the rendered page has no title or description).
 
 - Page metadata lives in **`scripts/seo-routes.js`** — edit titles/descriptions there.
-  `index: false` = noindex and left out of the sitemap (currently /testimonials, /termsofbusiness).
+  `index: false` = noindex and left out of the sitemap (currently /termsofbusiness). The testimonials page and homepage carousel were removed
+  (placeholder quotes); re-add real ones only with permission.
 - `/sitemap.xml` is `api/sitemap.js` (static pages + live Airtable roles). `robots.txt` and
   `llms.txt` are copied as-is.
 - The build is idempotent, so a fresh export from the design tool is fixed up on deploy.
