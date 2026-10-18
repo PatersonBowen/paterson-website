@@ -69,16 +69,6 @@ export const ROUTES = [
     body: "Deep industry knowledge, real role expertise, and a network of candidates who already know their trade — so when you need someone, we know exactly who can start.",
   },
   {
-    key: "services",
-    path: "/services",
-    nav: "Services",
-    title: "How a Search Runs — Retained Executive Search | Paterson",
-    description:
-      "A retained, mapped search built for senior construction and real estate roles, where the right hire is a handful of people who aren't looking.",
-    h1: "How a search actually runs.",
-    body: "A retained, mapped search built for senior construction and real estate roles — where the right hire is a handful of people who aren't looking.",
-  },
-  {
     key: "team",
     path: "/team",
     nav: "Team",

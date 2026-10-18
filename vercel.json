@@ -8,7 +8,8 @@
     { "source": "/terms-and-conditions", "destination": "/terms", "permanent": true },
     { "source": "/about", "destination": "/team", "permanent": true },
     { "source": "/about-us", "destination": "/team", "permanent": true },
-    { "source": "/contact-us", "destination": "/contact", "permanent": true }
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/services", "destination": "/clients", "permanent": true }
   ],
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
