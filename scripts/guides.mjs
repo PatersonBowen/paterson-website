@@ -206,7 +206,7 @@ const how = shell({
 </ul>
 
 <h2 id="contingent">How Contingent Recruitment Works</h2>
-<p>There are three common ways to fill a senior construction or real estate role. They differ in who does the searching and who carries the risk.</p>
+<p>There are three common ways to fill a senior construction or real estate role. They differ in who carries the burden of the search, the pool of candidates you can access, and who carries the risk.</p>
 <div class="tbl"><table>
 <thead><tr><th></th><th>Job ad</th><th>Contingent search</th><th>Retained search</th></tr></thead>
 <tbody>
