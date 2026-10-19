@@ -19,10 +19,10 @@ export const ORG = {
   logo: LOGO,
   image: OG_IMAGE,
   description:
-    "Paterson is an executive search firm placing senior construction and real estate leaders in New York, Miami and Dubai.",
+    "Paterson is an executive search firm placing senior construction and real estate leaders across the US.",
   email: "info@patersoncompany.com",
   sameAs: ["https://www.linkedin.com/company/patersoncompany/"],
-  areaServed: ["New York", "Miami", "Dubai"],
+  areaServed: ["United States"],
   knowsAbout: ["Executive search", "Construction recruitment", "Real estate recruitment"],
 };
 
@@ -34,9 +34,9 @@ export const ROUTES = [
     nav: "Home",
     title: "Paterson — Executive Search for Construction & Real Estate",
     description:
-      "We build the teams that build your skyline. Paterson is an executive search firm for senior construction and real estate roles in New York, Miami and Dubai.",
+      "We build the teams that build your skyline. Paterson is an executive search firm for senior construction and real estate roles across the US.",
     h1: "We build the teams that build your skyline.",
-    body: "Paterson is an executive search firm for senior construction and real estate roles — owner's representative, general contractor and developer side — across New York, Miami and Dubai.",
+    body: "Paterson is an executive search firm for senior construction and real estate roles — owner's representative, general contractor and developer side — across the US.",
   },
   {
     key: "jobs",

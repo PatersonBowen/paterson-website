@@ -31,8 +31,8 @@ nav a:hover{color:var(--accent)}
 .banner .ticks,.foot-ticks{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
 .hero{position:relative;max-width:1152px;margin:0 auto;padding:88px 24px 64px;box-sizing:border-box}
 .eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--accent);margin:0}
-h1{font-size:clamp(32px,5.4vw,68px);font-weight:700;margin-top:20px;max-width:16ch;color:#fff}
-h1.wide{max-width:none;font-size:clamp(22px,6.2vw,68px)}
+h1{font-size:clamp(32px,6vh,68px);font-weight:700;margin-top:20px;max-width:16ch;color:#fff}
+h1.wide{max-width:none;font-size:clamp(22px,min(6vh,6.2vw),68px)}
 .lede{margin-top:20px;max-width:640px;font-size:clamp(15px,2.2vh,18px);color:rgba(255,255,255,.7)}
 .meta{margin-top:18px;font-size:12px;color:#9a9a9a}
 .sky{display:block;width:100%;height:64px;position:relative;z-index:2}
@@ -173,7 +173,7 @@ ${ld.map((o) => `<script type="application/ld+json">${JSON.stringify(o).replace(
 const cta = `<div class="cta">
 <a href="/clients"><small class="mono">/ Hiring</small><strong>Brief us on a role</strong><span>A short call to scope the search. No hire, no fee.</span></a>
 <a href="/candidates"><small class="mono">/ Looking</small><strong>Speak to us in confidence</strong><span>No details are shared without your consent.</span></a>
-<a href="/jobs"><small class="mono">/ Open now</small><strong>View live roles</strong><span>Current searches in New York, Miami and Dubai.</span></a></div>`;
+<a href="/jobs"><small class="mono">/ Open now</small><strong>View live roles</strong><span>Current opportunities across the US.</span></a></div>`;
 
 /* ------------------------------------------------------------------ PAGE 1 */
 const how = shell({
@@ -181,7 +181,7 @@ const how = shell({
   title: "How We Work: Contingent Construction Recruitment | Paterson",
   ldName: "How Paterson works: contingent construction and real estate recruitment",
   description:
-    "Paterson is a contingent construction and real estate recruiter: you pay only when a hire starts. See how a search runs in New York, Miami and Dubai.",
+    "Paterson is a contingent construction and real estate recruiter: you pay only when a hire starts. See how a search runs across the US.",
   eyebrow: "How we work",
   h1: "Finding the right people,<br>for your opportunity<span class=\"dot\">.</span>",
   lede:
@@ -201,7 +201,7 @@ const how = shell({
 <h2 id="short">The Basics</h2>
 <ul>
 <li><b>Paid on results.</b> Our fee is payable only when a candidate we introduce starts with you. Until then, you pay nothing.</li>
-<li><b>Direct search.</b> The strongest project managers, superintendents and development leads are rarely looking for work. We identify them and approach them directly across New York, Miami and Dubai, rather than waiting for applications.</li>
+<li><b>Direct search.</b> The strongest project managers, superintendents and development leads are rarely looking for work. We identify them and approach them directly across the US, rather than waiting for applications.</li>
 <li><b>A considered shortlist.</b> You receive a small number of assessed candidates, each presented with our written reasoning, rather than a stack of CVs.</li>
 </ul>
 
