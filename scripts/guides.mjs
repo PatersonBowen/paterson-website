@@ -201,7 +201,7 @@ const how = shell({
 <h2 id="short">The Basics</h2>
 <ul>
 <li><b>Paid on results.</b> Our fee is payable only when a candidate we introduce starts with you. Until then, you pay nothing.</li>
-<li><b>Direct search.</b> The strongest project managers, superintendents and development leads are rarely looking for work. We identify them and approach them directly across the US, rather than waiting for applications.</li>
+<li><b>Direct search.</b> The strongest project managers, superintendents and development leads are rarely looking for work. We identify them and approach them directly across the US, or introduce candidates from our network of pre-screened professionals, rather than waiting for applications.</li>
 <li><b>A considered shortlist.</b> You receive a small number of assessed candidates, each presented with our written reasoning, rather than a stack of resumes.</li>
 </ul>
 
