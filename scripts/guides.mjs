@@ -41,7 +41,7 @@ h1.wide{max-width:none;font-size:clamp(22px,6.2vw,68px)}
 @media(max-width:760px){.menu{display:flex}nav{display:none;width:100%;flex-direction:column;gap:0;border-top:1px solid var(--line);margin:0 -24px;width:calc(100% + 48px)}nav.open{display:flex}nav a{padding:14px 24px;font-size:13px;border-bottom:1px solid var(--line)}}
 footer{position:relative;overflow:hidden}
 .foot{position:relative}
-.wrap{max-width:1152px;margin:0 auto;padding:0 24px 72px;display:grid;grid-template-columns:minmax(0,1fr);gap:48px}
+.wrap{max-width:1152px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:minmax(0,1fr);gap:48px}
 @media(min-width:960px){.wrap{grid-template-columns:230px minmax(0,720px);gap:64px;align-items:start}}
 .toc{position:sticky;top:84px;font-size:13px;display:none}
 @media(min-width:960px){.toc{display:block}}
@@ -49,6 +49,7 @@ footer{position:relative;overflow:hidden}
 .toc a{display:block;padding:5px 0;color:var(--mute);text-decoration:none;border-left:2px solid var(--line);padding-left:12px}
 .toc a:hover{color:var(--ink);border-color:var(--accent)}
 article h2{font-size:clamp(24px,3vw,32px);margin-top:56px}
+article>:first-child{margin-top:0}
 article h3{font-size:19px;margin-top:30px}
 article a{color:var(--accent);font-weight:500;text-decoration:none;transition:color .15s ease}
 article a:hover{opacity:.8}
