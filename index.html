@@ -196,6 +196,12 @@ document.addEventListener('DOMContentLoaded', async function() {
     const __seoCarry = Array.from(document.head.querySelectorAll('title, meta[name]:not([name="viewport"]), meta[property], link[rel="canonical"], link[rel~="icon"], link[rel="apple-touch-icon"], link[rel="manifest"], script[type="application/ld+json"], script#seo-pages')).map(function (n) { return n.cloneNode(true); });
     document.documentElement.replaceWith(doc.documentElement);
     document.documentElement.setAttribute("lang", "en");
+    // Hide the raw, unrendered template (shows {{ placeholders }} and form modals) until
+    // the runtime replaces <x-dc> with the rendered page. Fail-safe reveal after 10s.
+    const __hideRaw = document.createElement('style');
+    __hideRaw.textContent = 'x-dc{display:none !important}';
+    document.head.appendChild(__hideRaw);
+    setTimeout(function () { __hideRaw.remove(); }, 10000);
     const dead = Array.from(document.scripts);
     __seoCarry.forEach(function (n) {
       if (n.tagName === 'TITLE') Array.from(document.head.querySelectorAll('title')).forEach(function (t) { t.remove(); });
