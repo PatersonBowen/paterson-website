@@ -3,6 +3,7 @@
 // left out); live roles are read from Airtable so new jobs appear without a deploy.
 
 import { SITE, ROUTES, GUIDE_PAGES } from "../scripts/seo-routes.js";
+import { ENTRIES } from "../content/market-watch.js";
 
 const JOBS_TABLE = "tblmtcEqt7W8njXOC"; // same Jobs table as api/jobs.js
 
@@ -42,6 +43,10 @@ export default async function handler(req, res) {
   }
   const urls = ROUTES.filter((r) => r.index !== false).map((r) => ({ loc: SITE + (r.path === "/" ? "/" : r.path) }));
   for (const p of GUIDE_PAGES) urls.push({ loc: SITE + p.path, lastmod: p.lastmod });
+  if (ENTRIES.length) {
+    urls.push({ loc: SITE + "/market-watch", lastmod: ENTRIES.map((e) => e.updated || e.date).sort().pop() });
+    for (const e of ENTRIES) urls.push({ loc: `${SITE}/market-watch/${e.slug}`, lastmod: e.updated || e.date });
+  }
   for (const j of jobs) urls.push({ loc: `${SITE}/jobs/${encodeURIComponent(j.slug)}`, lastmod: j.lastmod });
 
   const body =

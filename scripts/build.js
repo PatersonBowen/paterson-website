@@ -180,4 +180,7 @@ for (const f of fs.readdirSync(root)) {
 // Long-form guide pages (static HTML).
 await import("./guides.mjs");
 
+// Market Watch (publishes nothing until content/market-watch.js has entries).
+await import("./market-watch.mjs");
+
 console.log(`SEO build OK: ${ROUTES.length + 2 + GUIDE_PAGES.length} pages + assets -> public/` + (writeSource ? " (index.html rewritten)" : ""));
