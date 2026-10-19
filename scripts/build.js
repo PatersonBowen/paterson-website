@@ -85,7 +85,7 @@ function headBlock(meta, route, pagesJson) {
   );
   const ld = [];
   if (route.key === "home") {
-    ld.push(ORG, { "@context": "https://schema.org", "@type": "WebSite", name: "Paterson", url: SITE + "/" });
+    ld.push(ORG, { "@context": "https://schema.org", "@type": "WebSite", name: "Paterson", alternateName: ["Paterson & Co", "Paterson Company", "Paterson Group"], url: SITE + "/" });
   } else if (url && indexable) {
     ld.push({
       "@context": "https://schema.org",

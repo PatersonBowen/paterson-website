@@ -15,6 +15,7 @@ export const ORG = {
   "@type": "EmploymentAgency",
   name: "Paterson",
   legalName: "Paterson Group L.L.C-FZ",
+  alternateName: ["Paterson & Co", "Paterson Company", "Paterson Group"],
   url: SITE + "/",
   logo: LOGO,
   image: OG_IMAGE,
