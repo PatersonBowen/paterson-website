@@ -23,7 +23,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { SITE, OG_IMAGE, ORG, ROUTES, NOT_FOUND, JOB_SHELL } from "./seo-routes.js";
+import { SITE, OG_IMAGE, ORG, ROUTES, NOT_FOUND, JOB_SHELL, GUIDE_PAGES } from "./seo-routes.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "public");
@@ -170,4 +170,7 @@ for (const f of fs.readdirSync(root)) {
   }
 }
 
-console.log(`SEO build OK: ${ROUTES.length + 2} pages + assets -> public/` + (writeSource ? " (index.html rewritten)" : ""));
+// Long-form guide pages (static HTML).
+await import("./guides.mjs");
+
+console.log(`SEO build OK: ${ROUTES.length + 2 + GUIDE_PAGES.length} pages + assets -> public/` + (writeSource ? " (index.html rewritten)" : ""));

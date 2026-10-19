@@ -2,7 +2,7 @@
 // Static pages come from scripts/seo-routes.js (anything with index: false is
 // left out); live roles are read from Airtable so new jobs appear without a deploy.
 
-import { SITE, ROUTES } from "../scripts/seo-routes.js";
+import { SITE, ROUTES, GUIDE_PAGES } from "../scripts/seo-routes.js";
 
 const JOBS_TABLE = "tblmtcEqt7W8njXOC"; // same Jobs table as api/jobs.js
 
@@ -41,6 +41,7 @@ export default async function handler(req, res) {
     // Fall back to static pages only.
   }
   const urls = ROUTES.filter((r) => r.index !== false).map((r) => ({ loc: SITE + (r.path === "/" ? "/" : r.path) }));
+  for (const p of GUIDE_PAGES) urls.push({ loc: SITE + p.path, lastmod: p.lastmod });
   for (const j of jobs) urls.push({ loc: `${SITE}/jobs/${encodeURIComponent(j.slug)}`, lastmod: j.lastmod });
 
   const body =
