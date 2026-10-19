@@ -64,9 +64,9 @@ export const ROUTES = [
     nav: "Clients",
     title: "For Clients — Construction & Real Estate Executive Search | Paterson",
     description:
-      "Deep industry knowledge, real role expertise and a network of candidates who already know their trade. Paterson fills senior construction and real estate positions in days, not weeks.",
+      "Deep industry knowledge, real role expertise and a network of pre-screened candidates who already know the industry. Paterson fills senior construction and real estate positions in days, not weeks.",
     h1: "Positions filled in days, not weeks.",
-    body: "Deep industry knowledge, real role expertise, and a network of candidates who already know their trade — so when you need someone, we know exactly who can start.",
+    body: "Deep industry knowledge, real role expertise, and a network of pre-screened candidates who already know the industry — so when you need someone, we know exactly who can start.",
   },
   {
     key: "team",

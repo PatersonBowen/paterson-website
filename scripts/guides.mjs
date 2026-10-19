@@ -249,7 +249,7 @@ const how = shell({
 <p>We recruit for three types of employer: general contractors, owner's representatives and developers. Roles range from project manager and superintendent to project executive and development director. Every search follows the same four steps.</p>
 <ol class="steps">
 <li><div><b>Map the market</b>We define the role with you: scale, delivery type, reporting line, must-haves and comp band. You approve the target list of firms and titles before we approach anyone.</div></li>
-<li><div><b>Approach discreetly</b>We contact the right people directly, including those who aren't on the market. Every conversation is confidential by default, on both sides.</div></li>
+<li><div><b>Approach discreetly</b>We contact the right people directly, including those who aren't on the market, and draw on our network of pre-screened professionals. Every conversation is confidential by default, on both sides.</div></li>
 <li><div><b>Shortlist with reasoning</b>We assess each candidate on what they have delivered, why they would move and where the risk sits. You receive three to five candidates, each with written reasoning and suggested questions for the interview.</div></li>
 <li><div><b>Close and onboard</b>We support the offer, any counter-offer and the notice period, and stay involved until the hire is at their new desk.</div></li>
 </ol>
