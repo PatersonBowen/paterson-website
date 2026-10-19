@@ -206,34 +206,34 @@ const how = shell({
 </ul>
 
 <h2 id="contingent">How Contingent Recruitment Works</h2>
-<p>There are three common routes to filling a senior construction or real estate role. They differ in who carries out the search and who carries the risk.</p>
+<p>There are three common ways to fill a senior construction or real estate role. They differ in who does the searching and who carries the risk.</p>
 <div class="tbl"><table>
-<thead><tr><th></th><th>Job advertisement</th><th>Contingent search</th><th>Retained search</th></tr></thead>
+<thead><tr><th></th><th>Job ad</th><th>Contingent search</th><th>Retained search</th></tr></thead>
 <tbody>
 <tr><td><b>Who finds candidates</b></td><td>Candidates respond to you</td><td>The recruiter identifies and approaches candidates</td><td>The recruiter identifies and approaches candidates</td></tr>
 <tr><td><b>When you pay</b></td><td>Upfront, for the listing, regardless of outcome</td><td>Only when a hire starts</td><td>In stages, including before a hire is made</td></tr>
 <tr><td><b>Who screens</b></td><td>Your team</td><td>The recruiter</td><td>The recruiter</td></tr>
 <tr><td><b>Best suited to</b></td><td>High-volume and early-career roles</td><td>Specific senior and mid-senior roles where the quality of the hire matters</td><td>Exclusive, confidential searches at executive level</td></tr>
 </tbody></table></div>
-<p>Our fee is a percentage of the hire's first-year base salary, agreed in writing before work begins. It is invoiced after the hire has started, never before. Every placement is backed by a replacement guarantee: if the hire leaves or is let go for performance within the guarantee window, we conduct a replacement search at no additional fee. Conditions apply and are set out in our terms of business.</p>
+<p>Our fee is a percentage of the hire's first-year base salary, agreed in writing before work begins. We invoice only after the hire has started. Every placement is also backed by a replacement guarantee. If the hire leaves, or is let go for performance, within the guarantee window, we run a replacement search at no extra cost. Conditions apply and are set out in our terms of business.</p>
 
 <h2 id="ads">Why Job Ads Fall Short for Senior Construction Hires</h2>
-<p>A job advertisement is inexpensive to place and appears to generate activity. For a senior or specialist role, it typically produces volume rather than fit.</p>
+<p>A job ad is cheap to place and looks like progress. For a senior or specialist role, it usually brings volume rather than fit.</p>
 
 <h3>1. The Strongest Candidates Are Not Searching</h3>
-<p>Senior project executives, superintendents and development leads are generally focused on delivering their current projects, not browsing listings. An advertisement reaches only those who are actively looking. Reaching the rest requires a direct, informed approach.</p>
+<p>Senior project executives, superintendents and development leads are busy delivering their current projects. They are not browsing listings. A job ad only reaches people who are actively looking. Reaching everyone else takes a direct, informed approach.</p>
 
 <h3>2. Advertising Attracts Availability, Not Suitability</h3>
 <p>Some active candidates are excellent. Many are simply available. Every application still has to be reviewed, and that time comes from the people running your projects.</p>
 
 <h3>3. A CV Does Not Show What Matters in Construction</h3>
-<p>A title such as "Senior Project Manager" can describe someone who delivered a $300M residential tower in Manhattan or someone who managed fit-outs. What separates them is project scale, delivery method, client type, market and reporting line, and that only emerges in conversation.</p>
+<p>A title such as "Senior Project Manager" can describe someone who delivered a $300M residential tower in Manhattan or someone who managed fit-outs. What separates them is project scale, delivery method, client type, market and reporting line. That only emerges in conversation.</p>
 
 <h3>4. A Public Listing Is Not Confidential</h3>
-<p>Replacing an underperformer, covering a departure or staffing a pursuit ahead of an announcement are situations where visibility is unwelcome. A public listing is visible to clients, competitors and your own team.</p>
+<p>Replacing an underperformer, covering a departure or staffing a pursuit before it is announced all call for discretion. A public listing is visible to clients, competitors and your own team.</p>
 
-<h3>5. Your Listing Competes With Every Other</h3>
-<p>The most sought-after candidates are approached continuously. A generic listing is unlikely to outweigh a considered conversation with someone who understands their work and can explain why a specific role merits a move.</p>
+<h3>5. Your Ad Competes With Every Other Ad</h3>
+<p>The most sought-after candidates are approached all the time. A generic ad rarely beats a considered conversation with someone who understands their work and can explain why a specific role is worth a move.</p>
 
 <h3>The Numbers Behind It</h3>
 <div class="stats">
@@ -243,23 +243,23 @@ const how = shell({
 </div>
 <p class="note">The AGC and NCCER survey covers all construction positions, not only senior roles, and the Greenhouse figure covers all industries. Both are cited as context for current hiring conditions, not as measures of senior construction roles specifically.</p>
 
-<div class="callout"><p><b>The cost of delay.</b> An unfilled lead project manager or superintendent position can cost more each week than the fee for filling it. The relevant comparison is not advertising versus a recruiter on price, but which route places the right person in the seat soonest.</p></div>
+<div class="callout"><p><b>The cost of delay.</b> An unfilled lead project manager or superintendent position can cost more each week than the fee for filling it. The real comparison is not a job ad versus a recruiter on price. It is which route puts the right person in the seat soonest.</p></div>
 
 <h2 id="search">How A Construction And Real Estate Search Runs</h2>
-<p>We recruit across owner's representative, general contractor and developer-side roles, from project manager and superintendent to project executive and development director. Every search follows the same four steps.</p>
+<p>We recruit for three types of employer: general contractors, owner's representatives and developers. Roles range from project manager and superintendent to project executive and development director. Every search follows the same four steps.</p>
 <ol class="steps">
-<li><div><b>Brief and market map</b>We define the role with you: scale, delivery type, reporting line, essential requirements and compensation band. You approve the target list of firms and titles before any approach is made.</div></li>
-<li><div><b>Targeted approach</b>We approach the right people directly, including those not currently on the market. Every conversation is confidential by default, on both sides.</div></li>
-<li><div><b>Assessed shortlist</b>Each candidate is assessed on what they have delivered, their reasons for moving and where the risk lies. You receive three to five candidates, each with written reasoning and suggested areas to probe at interview.</div></li>
-<li><div><b>Offer and landing</b>We support the offer, any counter-offer and the notice period, and remain involved until the hire is in post.</div></li>
+<li><div><b>Map the market</b>We define the role with you: scale, delivery type, reporting line, must-haves and comp band. You approve the target list of firms and titles before we approach anyone.</div></li>
+<li><div><b>Approach discreetly</b>We contact the right people directly, including those who are not on the market. Every conversation is confidential by default, on both sides.</div></li>
+<li><div><b>Shortlist with reasoning</b>We assess each candidate on what they have delivered, why they would move and where the risk sits. You receive three to five candidates, each with written reasoning and suggested questions for the interview.</div></li>
+<li><div><b>Close and onboard</b>We support the offer, any counter-offer and the notice period, and stay involved until the hire is at their new desk.</div></li>
 </ol>
-<p>If the brief or the compensation is unlikely to secure the hire in the current market, we will say so early.</p>
+<p>If the brief or the pay is unlikely to land the hire in the current market, we say so early.</p>
 
 <h2 id="candidates">For Construction And Real Estate Candidates</h2>
 <p>Candidates never pay a fee, and no details are shared with a client without your consent. We discuss the role and the client with you, and give candid feedback at each stage. Where nothing live is suitable, we can still advise on where your title and compensation sit in the current market. You can <a href="/candidates">send us your details in confidence</a>, see our <a href="/jobs">live roles</a>, or read our <a href="/guides/construction-careers-nyc">guide to construction careers and New York pay</a>.</p>
 
 <h2 id="when-ads">When Advertising Is Appropriate</h2>
-<p>Advertising has its place. It works well for high-volume and early-career hiring, for roles backed by a strong employer brand, and where there is time to screen applicants. If that describes your situation, we will say so. For senior and specialist construction and real estate roles, a direct search is typically faster and produces stronger candidates. If you are hiring, <a href="/clients">tell us about the role</a>.</p>
+<p>Job ads have their place. They work well for high-volume and early-career hiring, for roles backed by a strong employer brand, and where there is time to screen applicants. If that describes your situation, we will say so. For senior and specialist construction and real estate roles, a direct search is typically faster and produces stronger candidates. If you are hiring, <a href="/clients">tell us about the role</a>.</p>
 ${cta}
 <h2 id="sources">Sources</h2>
 <ul class="src">
@@ -279,7 +279,7 @@ const guide = shell({
   eyebrow: "Guide",
   h1: "A Graduate's Guide to Construction in New York<span class=\"dot\">.</span>",
   lede:
-    "How graduates start a construction career in New York, how the career ladder runs from field engineer to project executive, and what each stage typically pays in 2026. Built from official wage data and published graduate programs.",
+    "This guide covers how graduates start a construction career in New York, how the ladder runs from field engineer to project executive, and what each stage typically pays in 2026. It draws on official wage data and published graduate programs.",
   meta: "Updated October 2026",
   published: "2026-10-19",
   toc: [
@@ -293,7 +293,7 @@ const guide = shell({
     ["sources", "Sources And Method"],
   ],
   body: `
-<p>Construction offers graduates early responsibility. Within a few years, a graduate can be running a section of a nine-figure project, and pay in New York rises quickly with project scale. The industry can be difficult to read from the outside, because a single building involves several employers, each hiring for different roles. This guide sets out who hires whom, how careers progress and what each stage pays.</p>
+<p>Construction gives graduates responsibility early. Within a few years, a graduate can be running part of a nine-figure project, and pay in New York rises quickly with project size. The industry can be hard to read from the outside, because one building involves several employers, each hiring for different roles. This guide explains who hires whom, how careers progress and what each stage pays.</p>
 
 <h2 id="map">The Construction Industry Map: Who Hires Whom</h2>
 <p>Almost every large New York project involves three kinds of employer. Where you start shapes your first few years, although the boundaries between them are not fixed.</p>
@@ -302,22 +302,22 @@ const guide = shell({
 <tbody>
 <tr><td><b>Contractor side</b><br>(general contractors and construction managers)</td><td>Build the project: schedule, cost, subcontractors, safety and delivery on site.</td><td>Field engineer, project engineer, engineering assistant, assistant superintendent, estimator</td></tr>
 <tr><td><b>Owner and developer side</b></td><td>Fund and own the project. Decide what is built, on what budget and by when.</td><td>Analyst, assistant project manager, development associate, asset management associate</td></tr>
-<tr><td><b>Owner's representative</b><br>(project management firms)</td><td>Act as the owner's expert adviser: oversee budget, schedule and the contractor.</td><td>Assistant project manager, project coordinator, cost or schedule analyst</td></tr>
+<tr><td><b>Owner's representative</b><br>(project management firms)</td><td>Act as the owner's expert advisor: oversee budget, schedule and the contractor.</td><td>Assistant project manager, project coordinator, cost or schedule analyst</td></tr>
 </tbody></table></div>
 <p class="note">Design firms (architects and engineers) and specialty trade contractors are the other major employers. This guide focuses on the three sides above, which are the ones Paterson recruits for.</p>
 
 <h2 id="start">Where Construction Graduates Start</h2>
-<p>The Bureau of Labor Statistics lists a bachelor's degree in construction, engineering, business or a related field as the typical route to a construction manager role, with internships and co-op programs providing the experience employers look for. Newly hired managers typically work under an experienced manager for up to a year, and some firms run training programs lasting several years.</p>
+<p>The Bureau of Labor Statistics lists a bachelor's degree in construction, engineering, business or a related field as the typical route to a construction manager role. Internships and co-op programs provide the experience employers look for. New managers typically work under an experienced manager for up to a year, and some firms run training programs lasting several years.</p>
 <p>Large contractors recruit new graduates directly into structured entry-level roles. Recent examples:</p>
 <ul>
-<li><b>Turner Construction</b> recruits new graduates and interns as field engineers and engineering assistants across the US, including a New York City engineering assistant program for summer and fall 2026. Qualifying degrees include civil, mechanical, electrical and construction management.</li>
+<li><b>Turner Construction</b> recruits new graduates and interns as field engineers and engineering assistants across the US. This includes a New York City engineering assistant program for summer and fall 2026. Qualifying degrees include civil, mechanical, electrical and construction management.</li>
 <li><b>Gilbane Building Company</b> runs "Building Dynamic Builders", which hires entry-level Field Engineer I staff and provides both engineering and superintendent-side experience, with advancement paths built in.</li>
 <li><b>Skanska USA</b> hires new-graduate Field Engineer I roles and runs a co-op program with tracks in engineering, field engineering, cost, safety and estimating.</li>
 </ul>
-<p>The title varies (field engineer, project engineer or engineering assistant) but the work is similar: layout, documentation, submittals and requests for information, safety, and support for the superintendent and project manager. It is where graduates learn how a building is put together.</p>
+<p>The title varies: field engineer, project engineer or engineering assistant. The work is similar. It covers layout, documentation, submittals, requests for information and safety, plus support for the superintendent and project manager. It is where graduates learn how a building is put together.</p>
 
 <h2 id="ladder">The Career Ladder: Office Track And Field Track</h2>
-<p>On the contractor side, the path divides after the first couple of years. The office track leads through project management, and the field track leads through superintendence. Neither is superior, people move between them, and both can reach the top of a firm.</p>
+<p>On the contractor side, the path splits after the first couple of years. The office track runs through project management. The field track runs through the superintendent roles. Neither is better; people move between them, and both can reach the top of a firm.</p>
 <div class="tbl"><table>
 <thead><tr><th>Stage</th><th>Office track</th><th>Field track</th><th class="num">Typical time in role</th></tr></thead>
 <tbody>
@@ -356,7 +356,7 @@ const guide = shell({
 <tr><td>Project executive and above</td><td class="num">$220,000 +</td><td>Top decile and beyond; bonus and equity often form a substantial part of total pay</td></tr>
 </tbody></table></div>
 <p class="note">These are estimates of base salary and exclude bonus, overtime, equity and benefits. The bands are drawn from the official data above and published salary surveys, and are not offers or guarantees. Individual pay depends on the firm, project size, union status and track record. On the developer side, a finance-side associate role at a large New York developer was recently advertised at $90,000–$110,000.</p>
-<div class="callout"><p><b>Reading the numbers.</b> Pay does not rise in a straight line. The largest steps come when a professional takes responsibility for a project's budget and schedule (the move to project manager or superintendent), and again when they own multiple projects or a profit and loss account.</p></div>
+<div class="callout"><p><b>Reading the numbers.</b> Pay does not rise in a straight line. The largest steps come when a professional takes responsibility for a project's budget and schedule, which is the move to project manager or superintendent. They come again when that person owns several projects or a profit and loss account.</p></div>
 
 <h2 id="paths">Four Example Construction Career Paths</h2>
 <p>Careers rarely follow the chart exactly. These four composite examples show common routes. They are illustrative profiles built from the programs and data above, not named individuals.</p>
@@ -384,7 +384,7 @@ const guide = shell({
 
 <h2 id="switch">Changing Sides: Contractor, Developer And Owner's Representative</h2>
 <p>Moving between contractor, developer and owner's representative roles is common in the first ten years, and pay can change meaningfully as a result. The strongest moment to move is after delivering at least one full project from start to finish, because that is the experience the other side wants to see.</p>
-<p>If you are weighing a move, you can <a href="/candidates">speak to us in confidence</a> or review our <a href="/jobs">live roles</a>. If you are hiring across these roles, <a href="/clients">brief us on the position</a>, and see <a href="/how-we-work">how we work</a>.</p>
+<p>If you are weighing a move, <a href="/candidates">speak to us in confidence</a> or browse our <a href="/jobs">live roles</a>. If you are hiring for these roles, <a href="/clients">brief us on the position</a> or read <a href="/how-we-work">how we work</a>.</p>
 ${cta}
 
 <h2 id="sources">Sources And Method</h2>
