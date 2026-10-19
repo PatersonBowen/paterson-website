@@ -56,7 +56,7 @@ export const ROUTES = [
     description:
       "Many senior construction and real estate roles never reach the market. Send Paterson your details and we'll reach out when the right one appears.",
     h1: "The best roles rarely make it to the market.",
-    body: "Often the most interesting or sought-after roles don't ever make it to the market. They are filled by individuals already on our radar. Send through your details and we'll reach out when the time is right.",
+    body: "The most sought-after roles often never reach the market. They are filled by individuals already on our radar. Send us your details and we'll reach out when the time is right.",
   },
   {
     key: "clients",
@@ -84,9 +84,9 @@ export const ROUTES = [
     nav: "Contact",
     title: "Contact Paterson — Executive Search for Construction & Real Estate",
     description:
-      "Have a question or want to get in touch? Contact Paterson, an executive search firm for construction and real estate.",
+      "Tell us what you need and we'll come back to you. Contact Paterson, an executive search firm for construction and real estate.",
     h1: "Let's talk.",
-    body: "Have a question or want to get in touch? We'd love to hear from you.",
+    body: "Tell us what you need and we'll come back to you.",
   },
   {
     key: "careers",
@@ -94,9 +94,9 @@ export const ROUTES = [
     nav: "Join the Team",
     title: "Careers — Join the Paterson Team",
     description:
-      "We're growing the team across New York and Miami. If you bill, know the construction and real estate market, and want a focused desk of your own, talk to Paterson.",
+      "We're growing the team across the US. If you're a proven biller who knows the construction and real estate market and wants a focused desk of your own, talk to Paterson.",
     h1: "Build the desk with us.",
-    body: "We're growing the team across New York and Miami. If you bill, know the construction and real estate market, and want a focused desk of your own — we should talk.",
+    body: "We're growing the team across the US. If you're a proven biller who knows the construction and real estate market and wants a focused desk of your own, we should talk.",
   },
   {
     key: "terms",
