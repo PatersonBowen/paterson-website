@@ -43,7 +43,7 @@ footer{position:relative;overflow:hidden}
 article h2{font-size:clamp(24px,3vw,32px);margin-top:56px}
 article>:first-child{margin-top:0}
 article h3{font-size:19px;margin-top:30px}
-article a{color:var(--accent);font-weight:500;text-decoration:none;transition:color .15s ease}
+article a{color:#c93509;font-weight:500;text-decoration:none;transition:color .15s ease}
 article a:hover{opacity:.8}
 .cta a,.cta a:hover{color:inherit;font-weight:inherit}
 article p{margin:14px 0 0}
@@ -60,7 +60,7 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
 .note{font-size:13px;color:var(--mute);margin-top:10px}
 .steps{list-style:none;padding:0;counter-reset:s}
 .steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:6px 14px;padding:16px 0;border-top:1px solid var(--line);margin:0}
-.steps li::before{content:counter(s,decimal-leading-zero);font-family:'JetBrains Mono',monospace;color:var(--accent);font-size:13px;padding-top:3px}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:'JetBrains Mono',monospace;color:#c93509;font-size:13px;padding-top:3px}
 .steps b{display:block;font-family:'Space Grotesk',sans-serif;font-size:18px}
 .cta{margin-top:56px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .cta a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:2px;padding:20px 22px;transition:border-color .15s}
@@ -81,7 +81,7 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
 .card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:2px;padding:22px 24px;transition:border-color .15s}
 .card:hover{border-color:var(--accent)}
 .card[hidden]{display:none}
-.card .tags{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:#c93509}
 .card .tags span:last-child{color:var(--mute)}
 .card h3{margin-top:10px;font-size:22px}
 .card p{margin:8px 0 0;color:var(--mute);font-size:15px}
@@ -131,6 +131,7 @@ footer{background:var(--ink);color:#fff}
 .foot .links{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px}
 .foot .links a{color:rgba(255,255,255,.75);text-decoration:none}
 .foot .links a:hover{color:var(--accent)}
+.legal a{display:inline-block;padding:10px 0}
 .legal{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:11.5px;color:#9a9a9a;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 `;
 
