@@ -75,15 +75,6 @@ function validate(entries) {
   }
 }
 
-const FILTER_JS = `(function(){
-var cards=[].slice.call(document.querySelectorAll('.card[data-market]')),box=document.getElementById('chips');if(!box)return;
-var state={market:'all',type:'all'};
-function apply(){cards.forEach(function(c){var ok=(state.market==='all'||c.dataset.market===state.market)&&(state.type==='all'||c.dataset.type===state.type);c.hidden=!ok});
-[].forEach.call(box.querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',String(state[b.dataset.group]===b.dataset.value))});
-var n=cards.filter(function(c){return !c.hidden}).length;var e=document.getElementById('none');if(e)e.hidden=n>0}
-box.addEventListener('click',function(ev){var b=ev.target.closest('button');if(!b)return;state[b.dataset.group]=b.dataset.value;apply()});
-apply()})();`;
-
 export function buildMarketWatch(outDir, entries = ENTRIES, opts = {}) {
   if (!entries.length) return { count: 0 };
   validate(entries);
@@ -102,24 +93,14 @@ export function buildMarketWatch(outDir, entries = ENTRIES, opts = {}) {
   }
 
   // ---------------- list page
-  const markets = [...new Set(sorted.map((e) => e.market))];
-  const types = [...new Set(sorted.map((e) => e.type))];
-  const chip = (group, value, label, pressed) => `<button type="button" data-group="${group}" data-value="${esc(value)}" aria-pressed="${pressed}">${esc(label)}</button>`;
-  const chips =
-    markets.length + types.length > 2
-      ? `<div class="chips" id="chips" role="group" aria-label="Filter updates">${chip("market", "all", "All Markets", true)}${markets.map((m) => chip("market", m, m, false)).join("")}${chip("type", "all", "All Types", true)}${types.map((t) => chip("type", t, t, false)).join("")}</div>`
-      : "";
   const card = (e) =>
     `<a class="card${coverOf(e) ? " has-img" : ""}" href="/market-watch/${e.slug}" data-market="${esc(e.market)}" data-type="${esc(e.type)}">${coverOf(e) ? `<img src="/market-watch/images/${esc(coverOf(e))}" alt="" width="120" height="120" loading="lazy">` : ""}<div class="cbody"><div class="tags"><span>${esc(pretty(e.date))}</span><span>${esc(e.market)}</span><span>${esc(e.type)}</span></div><h3>${esc(e.title)}</h3><p>${esc(e.summary)}</p></div></a>`;
   const listBody = `
 <p>Market Watch follows notable construction and real estate projects across the US. Each update covers what is being built and what it means for hiring: which roles, which firms and what comes next.</p>
-${chips}
 <div class="cards">
 ${sorted.map(card).join("\n")}
 </div>
-<p class="empty" id="none" hidden>No updates match those filters.</p>
 ${cta}
-<script>${FILTER_JS}</script>
 `;
   const listUrl = SITE + "/market-watch";
   const list = shell({

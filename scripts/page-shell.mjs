@@ -77,10 +77,6 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
 .src li{margin:6px 0}
 .wrap.notoc{grid-template-columns:minmax(0,1fr)}
 .wrap.notoc article{max-width:880px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0}
-.chips button{font:inherit;font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:2px;padding:8px 12px;cursor:pointer;transition:border-color .15s,color .15s}
-.chips button:hover{border-color:var(--accent);color:var(--accent)}
-.chips button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
 .cards{display:grid;gap:16px;margin-top:26px}
 .card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:2px;padding:22px 24px;transition:border-color .15s}
 .card:hover{border-color:var(--accent)}
