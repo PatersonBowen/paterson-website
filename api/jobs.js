@@ -7,7 +7,7 @@
 
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Cache-Control", "s-maxage=60, stale-while-revalidate=300");
+  res.setHeader("Cache-Control", "s-maxage=60, stale-while-revalidate=86400");
 
   const baseId = process.env.AIRTABLE_BASE_ID;
   const token = process.env.AIRTABLE_TOKEN;
