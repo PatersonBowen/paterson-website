@@ -1,6 +1,30 @@
 // Same deployment as jobs.js — Vercel serverless function.
 // Uses the same AIRTABLE_BASE_ID / AIRTABLE_TOKEN env vars, reads from the "Team" table.
 
+// The LinkedIn column can be named a few ways in Airtable ("LinkedIn", "Linkedin", "LinkedIn URL", ...)
+// and people paste links in different shapes. Return one clean https LinkedIn URL, or "" if there isn't one.
+function pickLinkedIn(fields) {
+  const key = Object.keys(fields).find((k) => /linked\s*-?\s*in/i.test(k));
+  let v = key ? fields[key] : "";
+  if (Array.isArray(v)) v = v[0];
+  if (v && typeof v === "object") v = v.url || v.href || v.text || "";
+  v = String(v || "").trim().replace(/^<|>$/g, "");
+  if (!v) return "";
+  if (/^[A-Za-z0-9_%.-]+$/.test(v) && !/\./.test(v)) v = "https://www.linkedin.com/in/" + v; // bare profile name
+  else if (/^\/\//.test(v)) v = "https:" + v;
+  else if (/^in\//i.test(v)) v = "https://www.linkedin.com/" + v;
+  else if (!/^[a-z][a-z0-9+.-]*:/i.test(v)) v = "https://" + v; // "linkedin.com/in/..." or "www.linkedin.com/..."
+  try {
+    const u = new URL(v);
+    const host = u.hostname.replace(/^www\./, "");
+    if (!/^https?:$/.test(u.protocol)) return "";
+    if (host !== "linkedin.com" && !host.endsWith(".linkedin.com") && host !== "lnkd.in") return "";
+    return u.toString();
+  } catch (e) {
+    return "";
+  }
+}
+
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Cache-Control", "s-maxage=60, stale-while-revalidate=300");
@@ -45,7 +69,7 @@ export default async function handler(req, res) {
         bio: f.Bio || "",
         phone: f.Phone || "",
         email: f.Email || "",
-        linkedin: f.LinkedIn || "",
+        linkedin: pickLinkedIn(f),
         level: f.Level || "",
         area: f.Area || "",
         photoUrl: photoAttachment ? photoAttachment.url : "",
