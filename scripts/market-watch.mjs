@@ -185,6 +185,7 @@ ${cta}
     const page = shell({
       ...common,
       path: `/market-watch/${e.slug}`,
+      backLink: { href: "/market-watch", label: "All Market Watch" },
       ogImage: imgUrl,
       title: e.title.length + 11 <= 60 ? `${e.title} | Paterson` : e.title,
       description: trim(e.summary),

@@ -110,6 +110,8 @@ article a.card{color:inherit;font-weight:inherit}
 .car-btn:hover{border-color:var(--accent);color:var(--accent)}
 .car-btn:disabled{opacity:.35;cursor:default;border-color:var(--line);color:var(--ink)}
 .car-count{font-size:12px;color:var(--mute)}
+.back{display:inline-block;margin:0 0 22px;font-size:12px;letter-spacing:.12em;color:#9a9a9a;text-decoration:none;transition:color .15s}
+.back:hover,.back:focus-visible{color:var(--accent)}
 .hero-img{margin:0 0 26px}
 .hero-img img{display:block;width:100%;max-width:520px;height:auto;border:1px solid var(--line);border-radius:2px}
 .hero-img figcaption{margin-top:8px;font-size:12px;color:var(--mute)}
@@ -157,7 +159,7 @@ var m=document.querySelector(".menu"),n=document.getElementById("nav");m.addEven
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(init);else init();
 })();`;
 
-export function shell({ path: p, seed = 7, wideH1 = false, ldName, title, description, h1, lede, eyebrow, meta, toc = [], body, schemaType, published, ld: ldOverride, ogType = "article", banner = "", marketLink = false, ogImage = "" }) {
+export function shell({ path: p, seed = 7, wideH1 = false, ldName, title, description, h1, lede, eyebrow, meta, toc = [], body, schemaType, published, ld: ldOverride, ogType = "article", banner = "", marketLink = false, ogImage = "", backLink = null }) {
   const url = SITE + p;
   const ld = [
     {
@@ -201,7 +203,7 @@ ${ldFinal.map((o) => `<script type="application/ld+json">${JSON.stringify(o).rep
 <body>
 ${banner}<header><div class="bar"><a class="logo" href="/">Paterson<span>.</span></a>
 <button class="menu" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button><nav class="mono" id="nav"><a href="/">Home</a><a href="/jobs">Live Roles</a><a href="/candidates">Candidates</a><a href="/clients">Clients</a><a href="/team">Team</a><a href="/contact">Contact</a></nav></div></header>
-<section class="banner"><svg class="ticks" aria-hidden="true"></svg><div class="hero"><p class="eyebrow mono">/ ${esc(eyebrow)}</p><h1${wideH1 ? ` class="wide${wideH1 === "entry" ? " entry" : ""}"` : ''}>${h1}</h1><p class="lede">${lede}</p><p class="meta mono">${esc(meta)}</p></div><svg class="sky" id="sky" preserveAspectRatio="none" aria-hidden="true" data-seed="${seed}"></svg></section>
+<section class="banner"><svg class="ticks" aria-hidden="true"></svg><div class="hero">${backLink ? `<a class="back mono" href="${backLink.href}">&larr; ${esc(backLink.label)}</a>` : ""}<p class="eyebrow mono">/ ${esc(eyebrow)}</p><h1${wideH1 ? ` class="wide${wideH1 === "entry" ? " entry" : ""}"` : ''}>${h1}</h1><p class="lede">${lede}</p><p class="meta mono">${esc(meta)}</p></div><svg class="sky" id="sky" preserveAspectRatio="none" aria-hidden="true" data-seed="${seed}"></svg></section>
 <div class="wrap${toc.length ? "" : " notoc"}">${toc.length ? `<aside class="toc"><p class="mono">/ On this page</p>${toc.map(([id, t]) => `<a href="#${id}">${esc(t)}</a>`).join("")}</aside>` : ""}
 <article>${body}</article></div>
 <footer><svg class="foot-ticks" aria-hidden="true"></svg><div class="foot"><a class="logo" href="/">Paterson<span>.</span></a><p class="mono">For those who build</p>
