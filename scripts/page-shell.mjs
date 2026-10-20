@@ -24,6 +24,7 @@ nav a:hover{color:var(--accent)}
 .eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--accent);margin:0}
 h1{font-size:clamp(32px,6vh,68px);font-weight:700;margin-top:20px;max-width:16ch;color:#fff}
 h1.wide{max-width:none;font-size:clamp(22px,min(6vh,6.2vw),68px)}
+h1.entry{font-size:clamp(22px,min(4.6vh,4.4vw),52px)}
 .lede{margin-top:20px;max-width:640px;font-size:clamp(15px,2.2vh,18px);color:rgba(255,255,255,.7)}
 .meta{margin-top:18px;font-size:12px;color:#9a9a9a}
 .sky{display:block;width:100%;height:64px;position:relative;z-index:2}
@@ -96,6 +97,21 @@ article a.card{color:inherit;font-weight:inherit}
 .project p{margin:10px 0 0}
 .project .src{margin-top:10px;font-size:13px}
 .empty{margin-top:26px;color:var(--mute)}
+.li-link{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:0 0 24px;padding:12px 16px;border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--soft);border-radius:2px;font-size:14.5px}
+.li-link span{font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute)}
+.hero-img{margin:0 0 26px}
+.hero-img img{display:block;width:100%;max-width:520px;height:auto;border:1px solid var(--line);border-radius:2px}
+.hero-img figcaption{margin-top:8px;font-size:12px;color:var(--mute)}
+.card.has-img{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:start}
+.card.has-img[hidden]{display:none}
+.card img{display:block;width:120px;height:120px;object-fit:cover;border-radius:2px}
+@media(max-width:560px){.card.has-img{grid-template-columns:84px 1fr;gap:14px}.card img{width:84px;height:84px}}
+.facts{display:grid;gap:0;margin:0 0 8px;border:1px solid var(--line);border-radius:2px;background:var(--soft)}
+.facts div{display:grid;grid-template-columns:150px 1fr;gap:6px 16px;padding:11px 16px;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0}
+.facts dt{font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);padding-top:3px}
+.facts dd{margin:0}
+@media(max-width:560px){.facts div{grid-template-columns:1fr}}
 footer{background:var(--ink);color:#fff}
 .foot{max-width:1152px;margin:0 auto;padding:48px 24px 32px}
 .foot .logo{color:#fff;font-size:28px}
@@ -130,7 +146,7 @@ var m=document.querySelector(".menu"),n=document.getElementById("nav");m.addEven
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(init);else init();
 })();`;
 
-export function shell({ path: p, seed = 7, wideH1 = false, ldName, title, description, h1, lede, eyebrow, meta, toc = [], body, schemaType, published, ld: ldOverride, ogType = "article", banner = "", marketLink = false }) {
+export function shell({ path: p, seed = 7, wideH1 = false, ldName, title, description, h1, lede, eyebrow, meta, toc = [], body, schemaType, published, ld: ldOverride, ogType = "article", banner = "", marketLink = false, ogImage = "" }) {
   const url = SITE + p;
   const ld = [
     {
@@ -164,8 +180,8 @@ export function shell({ path: p, seed = 7, wideH1 = false, ldName, title, descri
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="${ogType}"><meta property="og:site_name" content="Paterson">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}">
-<meta property="og:url" content="${url}"><meta property="og:image" content="${SITE}/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="${url}"><meta property="og:image" content="${ogImage || SITE + "/og-image.png"}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${ogImage || SITE + "/og-image.png"}">
 <link rel="icon" href="/favicon.ico"><link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -174,7 +190,7 @@ ${ldFinal.map((o) => `<script type="application/ld+json">${JSON.stringify(o).rep
 <body>
 ${banner}<header><div class="bar"><a class="logo" href="/">Paterson<span>.</span></a>
 <button class="menu" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button><nav class="mono" id="nav"><a href="/">Home</a><a href="/jobs">Live Roles</a><a href="/candidates">Candidates</a><a href="/clients">Clients</a><a href="/team">Team</a><a href="/contact">Contact</a></nav></div></header>
-<section class="banner"><svg class="ticks" aria-hidden="true"></svg><div class="hero"><p class="eyebrow mono">/ ${esc(eyebrow)}</p><h1${wideH1 ? ' class="wide"' : ''}>${h1}</h1><p class="lede">${lede}</p><p class="meta mono">${esc(meta)}</p></div><svg class="sky" id="sky" preserveAspectRatio="none" aria-hidden="true" data-seed="${seed}"></svg></section>
+<section class="banner"><svg class="ticks" aria-hidden="true"></svg><div class="hero"><p class="eyebrow mono">/ ${esc(eyebrow)}</p><h1${wideH1 ? ` class="wide${wideH1 === "entry" ? " entry" : ""}"` : ''}>${h1}</h1><p class="lede">${lede}</p><p class="meta mono">${esc(meta)}</p></div><svg class="sky" id="sky" preserveAspectRatio="none" aria-hidden="true" data-seed="${seed}"></svg></section>
 <div class="wrap${toc.length ? "" : " notoc"}">${toc.length ? `<aside class="toc"><p class="mono">/ On this page</p>${toc.map(([id, t]) => `<a href="#${id}">${esc(t)}</a>`).join("")}</aside>` : ""}
 <article>${body}</article></div>
 <footer><svg class="foot-ticks" aria-hidden="true"></svg><div class="foot"><a class="logo" href="/">Paterson<span>.</span></a><p class="mono">For those who build</p>
