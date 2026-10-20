@@ -27,6 +27,27 @@ const trim = (s, n = 155) => {
   return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\s]+$/, "") + "…";
 };
 
+const coverOf = (e) => e.image || (e.carousel && e.carousel.images && e.carousel.images[0]) || "";
+
+const CAROUSEL_JS = `(function(){
+[].forEach.call(document.querySelectorAll('.carousel'),function(c){
+var t=c.querySelector('.car-track'),n=t.children.length,cnt=c.querySelector('.car-count'),prev=c.querySelector('[data-dir="-1"]'),next=c.querySelector('[data-dir="1"]');
+function w(){return t.clientWidth||1}
+function idx(){return Math.max(0,Math.min(n-1,Math.round(t.scrollLeft/w())))}
+function ui(){var i=idx();cnt.textContent=(i+1)+' / '+n;prev.disabled=i===0;next.disabled=i===n-1}
+var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function go(d){t.scrollTo({left:(idx()+d)*w(),behavior:calm?'auto':'smooth'})}
+prev.addEventListener('click',function(){go(-1)});next.addEventListener('click',function(){go(1)});
+t.addEventListener('scroll',ui,{passive:true});
+t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(1)}if(e.key==='ArrowLeft'){e.preventDefault();go(-1)}});
+window.addEventListener('resize',function(){t.scrollLeft=idx()*w();ui()});window.addEventListener('load',ui);ui()})})();`;
+
+const carouselHtml = (e) => {
+  const c = e.carousel, n = c.images.length;
+  const slides = c.images.map((f, i) => `<figure class="car-slide"><img src="/market-watch/images/${esc(f)}" alt="${esc(c.alts[i])}" width="1100" height="1100"${i ? ' loading="lazy"' : ' fetchpriority="high"'}></figure>`).join("");
+  return `<section class="carousel" aria-roledescription="carousel" aria-label="${esc(c.label || "Slides from the LinkedIn post")}"><div class="car-track" tabindex="0">${slides}</div><div class="car-ui"><button type="button" class="car-btn" data-dir="-1" aria-label="Previous slide">&larr; Prev</button><span class="car-count mono" aria-live="polite">1 / ${n}</span><button type="button" class="car-btn" data-dir="1" aria-label="Next slide">Next &rarr;</button></div><script>${CAROUSEL_JS}</script></section>`;
+};
+
 function validate(entries) {
   const slugs = new Set();
   for (const e of entries) {
@@ -39,6 +60,12 @@ function validate(entries) {
     slugs.add(e.slug);
     if (e.image && !fs.existsSync(path.join(IMG_DIR, e.image))) throw new Error(`Market Watch "${e.slug}": image file "${e.image}" not found in content/market-watch/images/`);
     if (e.image && !e.imageAlt) throw new Error(`Market Watch "${e.slug}": an image needs imageAlt text`);
+    if (e.carousel) {
+      const c = e.carousel;
+      if (!Array.isArray(c.images) || c.images.length < 2) throw new Error(`Market Watch "${e.slug}": a carousel needs at least two images`);
+      if (!Array.isArray(c.alts) || c.alts.length !== c.images.length) throw new Error(`Market Watch "${e.slug}": a carousel needs one alt text per image`);
+      for (const f of c.images) if (!fs.existsSync(path.join(IMG_DIR, f))) throw new Error(`Market Watch "${e.slug}": carousel image "${f}" not found in content/market-watch/images/`);
+    }
     for (const s of e.sources || []) {
       if (!s.name || !/^https?:\/\//.test(s.url || "")) throw new Error(`Market Watch "${e.slug}": every source needs a name and an http(s) url`);
     }
@@ -83,7 +110,7 @@ export function buildMarketWatch(outDir, entries = ENTRIES, opts = {}) {
       ? `<div class="chips" id="chips" role="group" aria-label="Filter updates">${chip("market", "all", "All Markets", true)}${markets.map((m) => chip("market", m, m, false)).join("")}${chip("type", "all", "All Types", true)}${types.map((t) => chip("type", t, t, false)).join("")}</div>`
       : "";
   const card = (e) =>
-    `<a class="card${e.image ? " has-img" : ""}" href="/market-watch/${e.slug}" data-market="${esc(e.market)}" data-type="${esc(e.type)}">${e.image ? `<img src="/market-watch/images/${esc(e.image)}" alt="" width="120" height="120" loading="lazy">` : ""}<div class="cbody"><div class="tags"><span>${esc(pretty(e.date))}</span><span>${esc(e.market)}</span><span>${esc(e.type)}</span></div><h3>${esc(e.title)}</h3><p>${esc(e.summary)}</p></div></a>`;
+    `<a class="card${coverOf(e) ? " has-img" : ""}" href="/market-watch/${e.slug}" data-market="${esc(e.market)}" data-type="${esc(e.type)}">${coverOf(e) ? `<img src="/market-watch/images/${esc(coverOf(e))}" alt="" width="120" height="120" loading="lazy">` : ""}<div class="cbody"><div class="tags"><span>${esc(pretty(e.date))}</span><span>${esc(e.market)}</span><span>${esc(e.type)}</span></div><h3>${esc(e.title)}</h3><p>${esc(e.summary)}</p></div></a>`;
   const listBody = `
 <p>Market Watch follows notable construction and real estate projects across the US. Each update covers what is being built and what it means for hiring: which roles, which firms and what comes next.</p>
 ${chips}
@@ -132,8 +159,8 @@ ${e.projects.map((p) => `<div class="project"><h3>${esc(p.name)}</h3>${p.locatio
     const statsHtml = (e.stats || []).length ? `<div class="stats">${e.stats.map((s) => `<div><b>${esc(s.value)}</b><span>${esc(s.label)}</span><small>${esc(s.source)}</small></div>`).join("")}</div>` : "";
     const teamHtml = (e.team || []).length ? `<h2 id="team">The Team Behind the Build</h2>\n<div class="tbl"><table><tbody>${e.team.map(([k, v]) => `<tr><td><b>${esc(k)}</b></td><td>${esc(v)}</td></tr>`).join("")}</tbody></table></div>` : "";
     const sourcesHtml = (e.sources || []).length ? `<h2 id="sources">Sources</h2>\n<ul class="src">${e.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a></li>`).join("")}</ul>` : "";
-    const imgUrl = e.image ? `${SITE}/market-watch/images/${e.image}` : "";
-    const figure = e.image ? `<figure class="hero-img"><img src="/market-watch/images/${esc(e.image)}" alt="${esc(e.imageAlt)}" width="800" height="800" fetchpriority="high">${e.imageCredit ? `<figcaption>${esc(e.imageCredit)}</figcaption>` : ""}</figure>` : "";
+    const imgUrl = coverOf(e) ? `${SITE}/market-watch/images/${coverOf(e)}` : "";
+    const figure = e.carousel ? carouselHtml(e) : e.image ? `<figure class="hero-img"><img src="/market-watch/images/${esc(e.image)}" alt="${esc(e.imageAlt)}" width="800" height="800" fetchpriority="high">${e.imageCredit ? `<figcaption>${esc(e.imageCredit)}</figcaption>` : ""}</figure>` : "";
     const liLink = e.linkedinUrl ? `<p class="li-link"><span>First shared on LinkedIn</span><a href="${esc(e.linkedinUrl)}" target="_blank" rel="noopener noreferrer">View the original post</a></p>` : "";
     const body = `
 ${figure}

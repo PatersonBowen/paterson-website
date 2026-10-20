@@ -40,6 +40,17 @@ export const ENTRIES = [
     market: "New York & Miami",
     type: "Market Insight",
     linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7518282642954543104",
+    carousel: {
+      label: "Slides from the LinkedIn post: New York vs Miami office demand",
+      images: ["market-insight-new-york-vs-miami-office-demand-1.jpg", "market-insight-new-york-vs-miami-office-demand-2.jpg", "market-insight-new-york-vs-miami-office-demand-3.jpg", "market-insight-new-york-vs-miami-office-demand-4.jpg", "market-insight-new-york-vs-miami-office-demand-5.jpg"],
+      alts: [
+        "Slide 1 of 5, Where the office work is going: 32.9 million square feet leased in Manhattan through Q3, the strongest year to date since 2000, and 12 office spaces over 50,000 square feet on the market across Miami-Dade County.",
+        "Slide 2 of 5, New York leasing: 78% of Manhattan office leasing in 2026 is new leases and expansions, and renewals have fallen to their lowest share in more than a decade. Source: Avison Young, Manhattan Office Q3 2026.",
+        "Slide 3 of 5, New York conversions: 9.5 million square feet of office-to-residential conversions planned to start in 2026, more than double the 4.3 million square feet that began in 2025. Source: Cushman & Wakefield via Bisnow.",
+        "Slide 4 of 5, Miami supply: the first new office tower in Miami's urban core since the pandemic, Santander's 1401 Brickell, is due for completion in 2029. Citadel's follows in 2031. Source: Bisnow, September 2026.",
+        "Slide 5 of 5, More fit-outs, more conversions, the same people. Miami office pipeline: 2.2 million square feet under construction, the fourth-largest pipeline in the US, and 4.8 million square feet more in planning, led by Citadel's 1.7 million square foot headquarters.",
+      ],
+    },
     summary:
       "Manhattan office leasing is at its strongest since 2000 and conversions are set to more than double, while Miami has too little office space for demand. Fit-out, conversion and high-rise delivery draw on the same pool of project leaders.",
     intro: [
@@ -48,14 +59,6 @@ export const ENTRIES = [
       "At the same time, older stock is leaving the office market. Cushman & Wakefield expects 9.5 million square feet of office-to-residential conversions to start construction in 2026, more than double the 4.3 million square feet that began in 2025.",
       "Miami has the opposite problem. Across Miami-Dade County, only about a dozen office spaces larger than 50,000 square feet are on the market, even as availability falls to 14.6% and asking prices have risen by 8.4% to $68.50 per square foot. The first new office tower in the urban core since the pandemic, Santander's 1401 Brickell, is not due until 2029. Apollo Global Management, Inc. looked for around 250,000 square feet in Miami earlier this year and chose Austin due to limited supply.", // CONFIRM: 1401 Brickell 2029 and Apollo/Austin not found in published coverage
       "The pipeline is growing. Miami had 2.2 million square feet of office space under construction at the end of August, the fourth largest total of the 25 major US markets tracked by CommercialCafe, with another 4.8 million square feet in planning, according to Yardi Matrix. The largest is Citadel's 1.7 million square foot headquarters on Brickell Bay Drive.", // CONFIRM: 2.2M / 4.8M / fourth-largest ranking not found in published coverage
-    ],
-    stats: [
-      { value: "32.9M sq ft", label: "of Manhattan office space leased through Q3 2026, the strongest year to date since 2000.", source: "Colliers, Manhattan Office Market Report Q3 2026" },
-      { value: "12.4%", label: "Manhattan office availability, the lowest level since August 2020.", source: "Colliers, Manhattan Office Market Report Q3 2026" },
-      { value: "9.5M sq ft", label: "of office-to-residential conversions expected to start in 2026, up from 4.3M sq ft in 2025.", source: "Cushman & Wakefield, via Bisnow" },
-      { value: "14.6%", label: "Miami-Dade office availability, with asking rents up 8.4% to $68.50 per sq ft.", source: "Savills, via Commercial Observer" },
-      { value: "About 12", label: "office spaces over 50,000 sq ft on the market across Miami-Dade County.", source: "Savills, via Commercial Observer" },
-      { value: "2.2M sq ft", label: "of Miami office space under construction at the end of August, with 4.8M sq ft more in planning.", source: "CommercialCafe and Yardi Matrix" },
     ],
     hiringView: [
       "Fit-out, conversion and high-rise delivery draw from the same pool of project managers, superintendents and MEP leads. Many are moving from New York to Miami as demand increases.",

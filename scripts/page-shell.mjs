@@ -99,6 +99,17 @@ article a.card{color:inherit;font-weight:inherit}
 .empty{margin-top:26px;color:var(--mute)}
 .li-link{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:0 0 24px;padding:12px 16px;border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--soft);border-radius:2px;font-size:14.5px}
 .li-link span{font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute)}
+.carousel{margin:0 0 26px;max-width:560px}
+.car-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;border:1px solid var(--line);border-radius:2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.car-track::-webkit-scrollbar{display:none}
+.car-track:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.car-slide{flex:0 0 100%;margin:0;scroll-snap-align:start}
+.car-slide img{display:block;width:100%;height:auto}
+.car-ui{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}
+.car-btn{font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:2px;padding:8px 14px;cursor:pointer;transition:border-color .15s,color .15s}
+.car-btn:hover{border-color:var(--accent);color:var(--accent)}
+.car-btn:disabled{opacity:.35;cursor:default;border-color:var(--line);color:var(--ink)}
+.car-count{font-size:12px;color:var(--mute)}
 .hero-img{margin:0 0 26px}
 .hero-img img{display:block;width:100%;max-width:520px;height:auto;border:1px solid var(--line);border-radius:2px}
 .hero-img figcaption{margin-top:8px;font-size:12px;color:var(--mute)}
