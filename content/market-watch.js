@@ -32,6 +32,92 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-10-21 */
+  {
+    slug: "behind-the-build-four-builds-at-the-top-of-the-market",
+    title: "Behind the Build: Four Builds at the Top of the Market",
+    date: "2026-10-21",
+    market: "New York",
+    type: "Behind The Build",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7518761446768418816",
+    carousel: {
+      label: "Slides from the LinkedIn post: four builds at the top of the market",
+      images: [
+        "behind-the-build-four-builds-at-the-top-of-the-market-1.jpg",
+        "behind-the-build-four-builds-at-the-top-of-the-market-2.jpg",
+        "behind-the-build-four-builds-at-the-top-of-the-market-3.jpg",
+        "behind-the-build-four-builds-at-the-top-of-the-market-4.jpg",
+        "behind-the-build-four-builds-at-the-top-of-the-market-5.jpg",
+      ],
+      alts: [
+        "Slide 1 of 5, Four Builds at the Top of the Market: four New York homes, and the specialist builders behind them. A mirrored steel slide spirals through a penthouse living room. Photo: Shannon Dupre / DD-REPS.",
+        "Slide 2 of 5, Sky House, 150 Nassau St, SilverLining: how do you fit an 80-foot slide inside an 1895 landmark? Slowly. The build of the 6,500 square foot, four-story penthouse took more than five years from planning to completion. Photo: Shannon Dupre / DD-REPS.",
+        "Slide 3 of 5, Manhattan Townhouse, Taconic Builders: traditional joinery and modern steel glazing, in one room. Millwork, stone and steel-framed glass are separate trades with separate tolerances, sequenced together, with McBride Architects and Alecia Stevens Interiors. Photo: Bjorn Wallander / OTTO.",
+        "Slide 4 of 5, Gramercy Park Townhouse, Sea-Dar Construction: on Gramercy Park, the street front is protected. It sits in a designated historic district, where exterior changes need Landmarks approval. Inside, original plaster and the carved mantel were kept alongside new work. Photo: Adrian Gaut / Architectural Digest.",
+        "Slide 5 of 5, Park Avenue Penthouse, I-Grace: even brand-new penthouses get rebuilt. The two-story unit sat in a new Toll Brothers building, and I-Grace reworked it with Venetian plaster, smart HVAC and lacquer-and-leather joinery. Photo courtesy of I-Grace.",
+      ],
+    },
+    summary:
+      "Some of New York's most complex construction happens behind closed doors, inside private homes. Four examples, and the specialist builders who delivered them.",
+    intro: [
+      "Some of New York's most complex construction happens behind closed doors, inside private homes. Here are four examples, and the specialist builders who delivered them.",
+      "Each presented a different kind of problem: a landmark shell, mixed trades in one room, a historic district and a new building rebuilt to a higher standard.",
+    ],
+    projects: [
+      {
+        name: "Sky House, 150 Nassau Street",
+        location: "New York, NY",
+        // CONFIRM: figures below are from the original post. 6sqft gives about 6,600 sq ft and a 1896 completion for the building
+        // (post says 6,500 sq ft and 1895); the five-year timeline and the Interior Design ranking come from sources the post
+        // cites (Compass listing, Robb Report) that could not be retrieved to link.
+        detail:
+          "Built by SilverLining, Inc. A 6,500 square foot, four-story penthouse crowning the 1895 American Tract Society Building, designed by David Hotson with interiors by Ghislaine Viñas. An 80-foot stainless-steel slide runs down through the levels. Planning and construction took more than five years, and Interior Design named it one of the best interiors of the last 20 years.",
+        sourceName: "6sqft: An 80-foot slide winds through this whimsical FiDi penthouse",
+        sourceUrl: "https://www.6sqft.com/an-80-foot-slide-winds-through-this-whimsical-fidi-penthouse/",
+      },
+      {
+        name: "Manhattan Townhouse",
+        location: "New York, NY",
+        // CONFIRM: Taconic's project page confirms the team and the photographer, but not the oak paneling, bookcases or glass wall
+        // (the post cites a Franklin Report review that could not be retrieved to link).
+        detail:
+          "Built by Taconic Builders, Inc. Delivered with McBride Architects and Alecia Stevens Interiors, the house pairs oak paneling, built-in bookcases and a marble fireplace with a steel-framed glass wall onto the garden.",
+        sourceName: "Taconic Builders: Manhattan Townhouse",
+        sourceUrl: "https://www.taconicbuilders.com/manhattan-townhouse",
+      },
+      {
+        name: "Gramercy Park Townhouse",
+        location: "Gramercy Park, New York, NY",
+        // CONFIRM: Sea-Dar's page credits SPAN Architecture, AMP Interiors and Christiane Duncan Interiors, and lists the
+        // Architectural Digest feature (Feb 9, 2024). It does not mention the plasterwork, the carved mantel or the historic district,
+        // and does not name Anne-Marie Winter (the post does).
+        detail:
+          "Built by Sea-Dar Construction. Working with SPAN Architecture and designers Anne-Marie Winter and Christiane Duncan, the renovation keeps the original plasterwork and carved mantel alongside new work. It was featured in Architectural Digest.",
+        sourceName: "Sea-Dar: Gramercy Park Townhouse",
+        sourceUrl: "https://seadar.com/projects/gramercy-park-townhouse/",
+      },
+      {
+        name: "Park Avenue Penthouse",
+        location: "Park Avenue, New York, NY",
+        // CONFIRM: I-Grace's page confirms every detail below, but it appears to be several years old, so "recent" may not fit.
+        detail:
+          "Built by I-Grace. A two-story renovation in a new Toll Brothers building with designer Arthur Dunnam: Venetian plaster, refinished walnut floors, smart HVAC and a custom dressing room in high-gloss lacquer and embossed leather.",
+        sourceName: "I-Grace: NYC Penthouse Renovation",
+        sourceUrl: "https://igrace.com/portfolio/featured-projects/nyc-penthouse-renovation/",
+      },
+    ],
+    hiringView: [
+      "Work at this level depends on project managers, superintendents and trades who are comfortable with small sites, high expectations and very little margin for error.",
+      "If that describes you and you are open to a confidential conversation, we would be glad to talk.",
+    ],
+    sources: [
+      { name: "6sqft: An 80-foot slide winds through this whimsical FiDi penthouse", url: "https://www.6sqft.com/an-80-foot-slide-winds-through-this-whimsical-fidi-penthouse/" },
+      { name: "Taconic Builders: Manhattan Townhouse", url: "https://www.taconicbuilders.com/manhattan-townhouse" },
+      { name: "Sea-Dar: Gramercy Park Townhouse", url: "https://seadar.com/projects/gramercy-park-townhouse/" },
+      { name: "I-Grace: NYC Penthouse Renovation", url: "https://igrace.com/portfolio/featured-projects/nyc-penthouse-renovation/" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-10-20 */
   {
     slug: "market-insight-new-york-vs-miami-office-demand",
