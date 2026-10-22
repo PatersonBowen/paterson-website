@@ -32,6 +32,47 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-10-22 */
+  {
+    slug: "industry-insight-a-soft-market-a-tight-one-for-leaders",
+    title: "Industry Insight: A Soft Market, a Tight One for Leaders",
+    date: "2026-10-22",
+    market: "US-wide",
+    type: "Industry Insight",
+    // CONFIRM: the graphic still reads "PHOTO: [CREDIT]" in the bottom-left. Replace the image file with a corrected graphic
+    // (same file name) once the photo credit is filled in.
+    image: "industry-insight-a-soft-market-a-tight-one-for-leaders.jpg",
+    imageAlt: "Industry Insight graphic: a soft market, a tight one for leaders. Construction unemployment of 3.1% in August 2026, a record low, and 75% of firms seeking superintendents struggling to hire one, over the New York skyline",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7519019546540662784",
+    summary:
+      "More US contractors cut headcount than added it this year, yet 75% of firms seeking a superintendent struggle to hire one and construction unemployment is at a record low.",
+    stats: [
+      { value: "3.1%", label: "construction unemployment, August 2026, a record low.", source: "AGC analysis of Bureau of Labor Statistics data" },
+      { value: "75%", label: "of firms seeking superintendents struggle to hire one.", source: "AGC and NCCER, 2026 Workforce Survey" },
+      { value: "58%", label: "of firms reporting on data-center effects say competition for skilled workers has increased.", source: "AGC and NCCER, 2026 Workforce Survey" },
+    ],
+    intro: [
+      // CONFIRM: "the first time since the pandemic" (in the original post) is not stated in AGC's survey, so it is left out here.
+      "More US construction firms cut headcount than added it over the past year. In the 2026 Workforce Survey from the Associated General Contractors of America (AGC) and NCCER, 37% of respondents reduced headcount by at least 5%, against 34% that increased it by at least 5%.",
+      "Yet the shortage of experienced people has not eased. 75% of firms looking for a superintendent say they are struggling to hire one, and for project managers and supervisors the figure is 74%. Construction unemployment fell to a record-low 3.1% in August, according to AGC's analysis of federal data.",
+      "Skills: half of respondents say available candidates are not qualified, because they lack the skills, certificates or licenses the job needs.",
+      // CONFIRM: the post said "in the markets where they cluster"; AGC's wording is "among firms reporting on those effects".
+      "Data centers: among firms reporting on their effects, 58% say data-center projects have increased competition for skilled workers.",
+      // CONFIRM: no published source for this one. It is stated as Paterson's view, as the graphic's "Our View" label suggests.
+      "Retirement: in our view, senior leaders are leaving faster than they are being replaced.",
+    ],
+    hiringView: [
+      "The market has softened. Demand for proven leaders has not.",
+      "Are you finding senior hires harder than a year ago? What is driving it in your market? We would like to hear from you.",
+    ],
+    sources: [
+      { name: "AGC: Construction workforce shortages remain acute despite soft market conditions as data centers strain labor supply (September 3, 2026)", url: "https://www.agc.org/news/2026/09/03/construction-workforce-shortages-remain-acute-despite-soft-market-conditions-data-centers-strain" },
+      { name: "AGC and NCCER: 2026 Workforce Survey Analysis", url: "https://www.agc.org/sites/default/files/users/user21902/2026%20Workforce%20Survey%20Analysis%20(4).pdf" },
+      { name: "AGC and NCCER: 2026 Workforce Survey, National Results", url: "https://www.agc.org/sites/default/files/users/user21902/2026%20AGC%20WFS%20NCCER%20(3).pdf" },
+      { name: "AGC: Construction employment, earnings and unemployment, August 2026", url: "https://www.agc.org/sites/default/files/users/user21902/Employment-AHE%20table%20AUG%202026.pdf" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-10-21 */
   {
     slug: "behind-the-build-four-builds-at-the-top-of-the-market",
