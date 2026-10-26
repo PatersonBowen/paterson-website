@@ -32,6 +32,51 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-10-26 */
+  {
+    slug: "behind-the-build-the-chrysler-building-405-lexington-avenue",
+    title: "Behind the Build: The Chrysler Building, 405 Lexington Avenue",
+    date: "2026-10-26",
+    market: "New York",
+    type: "Behind The Build",
+    image: "behind-the-build-the-chrysler-building-405-lexington-avenue.jpg",
+    imageAlt: "Behind the Build graphic: the Chrysler Building, 405 Lexington Avenue, its lit crown rising above the Midtown East skyline at dusk",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7520447922467971072",
+    summary:
+      "Tishman Speyer has signed a 150-year ground lease with The Cooper Union and, with lead investor PSP Investments, will put $235 million into restoring the 1930 Chrysler Building.",
+    facts: [
+      ["Development", "The Chrysler Building"],
+      ["Value", "$235 Million"],
+      ["Location", "405 Lexington Avenue, Midtown East, Manhattan"],
+    ],
+    intro: [
+      "Tishman Speyer is back at the Chrysler Building. Chosen from a field of competitive proposals, it has signed a 150-year ground lease with The Cooper Union and, with lead investor PSP Investments, will put $235 million into restoring the 1930 tower, all equity.",
+      // CONFIRM: sources support the ground rent rise ($7.8M in 2018 to a high of $32.5M, per Bisnow), the court removal of the last leaseholder
+      // and the roughly $21M of unpaid rent, and the rodent complaints. The "2024" end date and "elevator outages" were not found.
+      "The building has had a difficult decade. Ground rent quadrupled between 2018 and 2024, the last leaseholder was removed by the courts owing $21 million, and tenants complained of elevator outages and pests.",
+      // CONFIRM: the announcement describes an indoor-outdoor amenity with a lounge and outdoor access on the 61st floor; it does not say "terraces".
+      "The plan restores the façade and crown, replaces the building's core systems and prebuilds 75% of the vacant space as ready-to-occupy suites. The 61st floor, home to the eagle gargoyles, becomes a lounge with terraces.",
+      // CONFIRM: "almost no new office space built around Grand Central in decades" is the post's own view; no source found.
+      "With almost no new office space built around Grand Central in decades, the timing makes sense.",
+    ],
+    team: [
+      ["Developer", "Tishman Speyer"],
+      ["Lead Investor", "PSP Investments | Investissements PSP"],
+      ["Landowner", "The Cooper Union for the Advancement of Science and Art"],
+    ],
+    hiringHeading: "What Comes Next",
+    hiringView: [
+      "The challenge is delivering it inside a landmark that cannot visibly change. No architect, contractor or construction timeline has been announced yet.",
+      // CONFIRM: this closing line was added to match the other entries; it is not in the LinkedIn post.
+      "If you have worked inside a protected tower and would like to hear when the team forms, we would welcome a confidential conversation.",
+    ],
+    sources: [
+      { name: "PSP Investments: Tishman Speyer and The Cooper Union finalize ground lease agreement and revitalization plan for Chrysler Building", url: "https://www.investpsp.com/en/news/tishman-speyer-the-cooper-union-finalize-ground-lease-agreement-and-revitalization-plan-for-chrysler-building/" },
+      { name: "Bisnow: Tishman Speyer retakes Chrysler Building, plans $235M renovation", url: "https://www.bisnow.com/news/new-york/office/tishman-speyer-chrysler-building-cooper-union-psp" },
+      { name: "CRE Daily: Judge orders RFR to cede Chrysler Building to Cooper Union", url: "https://www.credaily.com/briefs/judge-orders-rfr-to-cede-chrysler-building-to-cooper-union" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-10-22 */
   {
     slug: "industry-insight-a-soft-market-a-tight-one-for-leaders",
