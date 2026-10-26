@@ -3,6 +3,7 @@
 
 import { sendResendEmail, escapeHtml, setCors } from "./_lib/resend.js";
 import { logSmsOptIn } from "./_lib/airtable.js";
+import { screenSubmission } from "./_lib/spam.js";
 
 export default async function handler(req, res) {
   setCors(res);
@@ -16,6 +17,8 @@ export default async function handler(req, res) {
   if (smsConsent && !phone) {
     return res.status(400).json({ error: "Phone number is required when SMS consent is given" });
   }
+  const blocked = screenSubmission(req, { email, texts: [name, subject, message] });
+  if (blocked) return res.status(blocked.status).json(blocked.body);
 
   try {
     await sendResendEmail({

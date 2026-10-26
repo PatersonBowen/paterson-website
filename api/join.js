@@ -3,6 +3,7 @@
 // `resume.content` is the file as a base64 data URL (read client-side via FileReader).
 
 import { sendResendEmail, escapeHtml, setCors, toAttachment } from "./_lib/resend.js";
+import { screenSubmission } from "./_lib/spam.js";
 
 export default async function handler(req, res) {
   setCors(res);
@@ -13,6 +14,8 @@ export default async function handler(req, res) {
   if (!name || !email) {
     return res.status(400).json({ error: "Missing required fields: name, email" });
   }
+  const blocked = screenSubmission(req, { email, texts: [name, role, message] });
+  if (blocked) return res.status(blocked.status).json(blocked.body);
 
   const attachment = toAttachment(resume);
 

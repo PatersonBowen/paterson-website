@@ -2,6 +2,7 @@
 // Expects JSON: { company, contactName, email, phone, roleTitle, market, sector, details }
 
 import { sendResendEmail, escapeHtml, setCors } from "./_lib/resend.js";
+import { screenSubmission } from "./_lib/spam.js";
 
 export default async function handler(req, res) {
   setCors(res);
@@ -12,6 +13,8 @@ export default async function handler(req, res) {
   if (!details || !email) {
     return res.status(400).json({ error: "Missing required fields: email, details" });
   }
+  const blocked = screenSubmission(req, { email, texts: [company, contactName, roleTitle, market, sector, details] });
+  if (blocked) return res.status(blocked.status).json(blocked.body);
 
   try {
     await sendResendEmail({
