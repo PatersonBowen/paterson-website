@@ -32,6 +32,99 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-10-27 */
+  {
+    slug: "the-2027-pipeline-four-projects-breaking-ground",
+    title: "The 2027 Pipeline: Four Projects Breaking Ground",
+    date: "2026-10-27",
+    market: "New York & Miami",
+    type: "The 2027 Pipeline",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7520872796395122688",
+    carousel: {
+      label: "Slides from the LinkedIn post: the 2027 pipeline, four projects breaking ground in New York and Miami",
+      images: [
+        "the-2027-pipeline-four-projects-breaking-ground-1.jpg",
+        "the-2027-pipeline-four-projects-breaking-ground-2.jpg",
+        "the-2027-pipeline-four-projects-breaking-ground-3.jpg",
+        "the-2027-pipeline-four-projects-breaking-ground-4.jpg",
+        "the-2027-pipeline-four-projects-breaking-ground-5.jpg",
+        "the-2027-pipeline-four-projects-breaking-ground-6.jpg",
+        "the-2027-pipeline-four-projects-breaking-ground-7.jpg",
+      ],
+      alts: [
+        "Slide 1 of 7, The 2027 Pipeline: four projects breaking ground. Two in New York, two in Miami, and the teams they will need.",
+        "Slide 2 of 7, New York: Penn Station. A full rebuild of the busiest rail hub in the Western Hemisphere, phased so the station stays open throughout. $7 to 8 billion, 600,000 daily passengers. Construction targeted to start by the end of 2027. Stakeholders: Amtrak, Halmar, Skanska. Rendering: Penn Transformation Partners and Amtrak.",
+        "Slide 3 of 7, New York: 1527 York Avenue. A boutique luxury condominium replacing two walk-ups, financed with a $52.5 million construction loan from S3 Capital. 20 stories, 28 residences, York Avenue at East 81st Street, Upper East Side. Construction start early 2027. Stakeholders: Grand Cru Real Estate, Visabe, Oak CM. Rendering: Grand Cru Real Estate and Visabe.",
+        "Slide 4 of 7, Miami: Delano Residences & Hotel. Downtown Miami's second supertall, rising next to the Waldorf Astoria. Delivery estimated for 2031. 90 stories, 985 feet, 421 residences, 400 Biscayne Boulevard. Construction start expected summer 2027. Stakeholders: PMG, Ennismore, CUBE3, Carlos Ott, Meyer Davis. Rendering: PMG.",
+        "Slide 5 of 7, Miami: 619 Brickell by Nobu. Nobu's first residential project in Miami, designed by Foster + Partners. Closings expected from 2031. 75 stories, around 300 residences, 619 Brickell Avenue on Biscayne Bay. Construction start 2027. Stakeholders: 13th Floor Investments, Key International, Foster + Partners, Sieger-Suárez. Renderings: 13th Floor Investments and Key International.",
+        "Slide 6 of 7, What they will need. Preconstruction: estimators and precon leads pricing work years before it starts. Project leadership: directors and senior PMs to run multi-year schedules. Site: superintendents for live-station logistics and supertall cores. Owner side: development managers and owner's reps holding the budget.",
+        "Slide 7 of 7, Which 2027 start are you watching? Tell us what we've missed.",
+      ],
+    },
+    summary:
+      "Four projects across New York and Miami, Penn Station, 1527 York Avenue, Delano Residences & Hotel and 619 Brickell by Nobu, are scheduled to break ground or reach a major construction stage in 2027.",
+    intro: [
+      "Four projects across New York and Miami are scheduled to break ground or reach a major construction stage next year.",
+      "In New York, the $7-8 billion Penn Station rebuild is targeted to start by the end of 2027, and a 20-story luxury condominium at 1527 York Avenue is slated to break ground early in the year.",
+      // CONFIRM: the sources found do not give a summer 2027 groundbreaking for Delano (a broker page says 2027, no month) or a 2027 start for 619 Brickell.
+      "In Miami, PMG plans to break ground on the 90-story Delano Residences & Hotel next summer, and the 75-story 619 Brickell by Nobu is set to start the same year.",
+    ],
+    projects: [
+      {
+        name: "Penn Station",
+        location: "Seventh to Eighth Avenue, 31st to 33rd Streets, New York, NY",
+        detail:
+          "A full rebuild of the busiest rail hub in the Western Hemisphere, phased so the station stays open throughout. Scale: $7-8 billion, 600,000 daily passengers. Construction start: targeted by the end of 2027. Stakeholders: Amtrak, Halmar, Skanska.",
+        sourceName: "6sqft: Amtrak reveals first renderings of the new Penn Station",
+        sourceUrl: "https://www.6sqft.com/amtrak-reveals-first-renderings-of-the-new-penn-station/",
+      },
+      {
+        name: "1527 York Avenue",
+        location: "York Avenue at East 81st Street, Upper East Side, New York, NY",
+        detail:
+          "A boutique luxury condominium replacing two walk-ups, financed with a $52.5 million construction loan from S3 Capital. Scale: 20 stories, 28 residences. Construction start: early 2027. Stakeholders: Grand Cru Real Estate, Visabe, Oak CM (construction manager and general contractor).",
+        sourceName: "Commercial Observer: S3 Capital lends $53M for Upper East Side condo tower",
+        sourceUrl: "https://commercialobserver.com/2026/10/s3-capital-manhattan-upper-east-side-condos/",
+      },
+      {
+        name: "Delano Residences & Hotel",
+        location: "400 Biscayne Boulevard, Downtown Miami, FL",
+        // CONFIRM: 90 stories, 421 residences, address and the design team are confirmed by the launch announcement; the 985 ft height, the
+        // 2031 delivery and the summer 2027 start come from the post and were not confirmed in sources that could be read.
+        detail:
+          "Downtown Miami's second supertall, rising next to the Waldorf Astoria. Delivery is estimated for 2031. Scale: 90 stories, 985 feet, 421 residences. Construction start: expected summer 2027. Stakeholders: PMG, Ennismore, CUBE3, Carlos Ott, Meyer Davis.",
+        sourceName: "Ennismore and PMG announce first-ever Delano branded residences",
+        sourceUrl: "https://resident.com/press-releases/2026/02/28/ennismore-pmg-announce-first-ever-delano-branded-residences",
+      },
+      {
+        name: "619 Brickell by Nobu",
+        location: "619 Brickell Avenue, Brickell, Miami, FL",
+        // CONFIRM: 75 stories, about 300 residences, the design team and the developers are confirmed; the 2027 start and closings from 2031
+        // were not found in sources that could be read.
+        detail:
+          "Nobu's first residential project in Miami, designed by Foster + Partners. Closings are expected from 2031. Scale: 75 stories, around 300 residences. Construction start: 2027. Stakeholders: 13th Floor Investments, Key International, Foster + Partners, Sieger-Suárez.",
+        sourceName: "The Real Deal: Nobu Residences Miami tower launches sales",
+        sourceUrl: "https://therealdeal.com/miami/2026/06/04/nobu-residences-miami-tower-launches-sales/",
+      },
+    ],
+    hiringHeading: "What They Will Need",
+    hiringView: [
+      "Each one will need preconstruction, project and site leadership in place well before the first pour. For many of those teams, the hiring starts now.",
+      "Preconstruction: estimators and precon leads pricing work years before it starts. Project leadership: directors and senior PMs to run multi-year schedules. Site: superintendents for live-station logistics and supertall cores. Owner side: development managers and owner's reps holding the budget.",
+      "Which 2027 start are you watching? Tell us what we've missed.",
+    ],
+    sources: [
+      { name: "6sqft: Amtrak reveals first renderings of the new Penn Station", url: "https://www.6sqft.com/amtrak-reveals-first-renderings-of-the-new-penn-station/" },
+      { name: "ABC7 New York: Transportation Secretary Duffy reveals Penn Station redesign plans and schedule", url: "https://abc7ny.com/post/transportation-secretary-sean-duffy-reveal-penn-station-redesign-renovation-plans-schedule/17661295/" },
+      { name: "Commercial Observer: S3 Capital lends $53M for Upper East Side condo tower", url: "https://commercialobserver.com/2026/10/s3-capital-manhattan-upper-east-side-condos/" },
+      { name: "Hoodline: Upper East Side walk-ups make way for 20-story, 28-unit York Avenue condo tower", url: "https://hoodline.com/2026/10/upper-east-side-walk-ups-make-way-for-20-story-28-unit-york-avenue-condo-tower/" },
+      { name: "Ennismore and PMG announce first-ever Delano branded residences", url: "https://resident.com/press-releases/2026/02/28/ennismore-pmg-announce-first-ever-delano-branded-residences" },
+      { name: "The Real Deal: PMG launches Delano-branded supertall in Miami", url: "https://therealdeal.com/miami/2026/02/19/pmg-launches-delano-branded-supertall-in-miami" },
+      { name: "The Real Deal: Nobu Residences Miami tower launches sales", url: "https://therealdeal.com/miami/2026/06/04/nobu-residences-miami-tower-launches-sales/" },
+      { name: "Florida YIMBY: New renderings reveal Nobu Residences at 619 Brickell", url: "https://floridayimby.com/2026/05/new-renderings-reveal-nobu-residences-at-619-brickell-in-miamis-brickell-district.html" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-10-26 */
   {
     slug: "behind-the-build-the-chrysler-building-405-lexington-avenue",
