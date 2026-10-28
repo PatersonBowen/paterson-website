@@ -49,12 +49,12 @@ const how = shell({
 <h2 id="contingent">How Contingent Recruitment Works</h2>
 <p>There are three common ways to fill a senior construction or real estate role. They differ in who carries the burden of the search, the pool of candidates you can access, and who carries the risk.</p>
 <div class="tbl"><table>
-<thead><tr><th></th><th>Job ad</th><th>Contingent search</th><th>Retained search</th></tr></thead>
+<thead><tr><th><span class="sr">Comparison</span></th><th>Job ad</th><th>Contingent search</th><th>Retained search</th></tr></thead>
 <tbody>
-<tr><td><b>Who finds candidates</b></td><td>Candidates respond to you</td><td>The recruiter identifies and approaches candidates</td><td>The recruiter identifies and approaches candidates</td></tr>
-<tr><td><b>When you pay</b></td><td>Upfront, for the listing, regardless of outcome</td><td>Only when a hire starts</td><td>In stages, including before a hire is made</td></tr>
-<tr><td><b>Who screens</b></td><td>Your team</td><td>The recruiter</td><td>The recruiter</td></tr>
-<tr><td><b>Best suited to</b></td><td>High-volume and early-career roles</td><td>Specific senior and mid-senior roles where the quality of the hire matters</td><td>Exclusive, confidential searches at executive level</td></tr>
+<tr><th scope="row">Who finds candidates</th><td>Candidates respond to you</td><td>The recruiter identifies and approaches candidates</td><td>The recruiter identifies and approaches candidates</td></tr>
+<tr><th scope="row">When you pay</th><td>Upfront, for the listing, regardless of outcome</td><td>Only when a hire starts</td><td>In stages, including before a hire is made</td></tr>
+<tr><th scope="row">Who screens</th><td>Your team</td><td>The recruiter</td><td>The recruiter</td></tr>
+<tr><th scope="row">Best suited to</th><td>High-volume and early-career roles</td><td>Specific senior and mid-senior roles where the quality of the hire matters</td><td>Exclusive, confidential searches at executive level</td></tr>
 </tbody></table></div>
 <p>Our fee is a percentage of the hire's first-year base salary, agreed in writing before work begins. We invoice only after the hire has started. Every placement is also backed by a replacement guarantee. If the hire leaves, or is let go for performance, within the guarantee window, we run a replacement search at no extra cost. Conditions apply and are set out in our terms of business.</p>
 

@@ -37,7 +37,7 @@ footer{position:relative;overflow:hidden}
 @media(min-width:960px){.wrap{grid-template-columns:230px minmax(0,720px);gap:64px;align-items:start}}
 .toc{position:sticky;top:84px;font-size:13px;display:none}
 @media(min-width:960px){.toc{display:block}}
-.toc p{margin:0 0 10px;font-size:11.5px;color:var(--accent)}
+.toc p{margin:0 0 10px;font-size:11.5px;color:#c93509}
 .toc a{display:block;padding:5px 0;color:var(--mute);text-decoration:none;border-left:2px solid var(--line);padding-left:12px}
 .toc a:hover{color:var(--ink);border-color:var(--accent)}
 article h2{font-size:clamp(24px,3vw,32px);margin-top:56px}
@@ -56,6 +56,8 @@ table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
 th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
 th{background:var(--soft);font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:500}
 tr:last-child td{border-bottom:0}
+tbody th{background:none;font-family:inherit;font-size:inherit;text-transform:none;letter-spacing:0;font-weight:700;text-align:left;padding:11px 14px;vertical-align:top}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .note{font-size:13px;color:var(--mute);margin-top:10px}
 .steps{list-style:none;padding:0;counter-reset:s}
@@ -65,7 +67,7 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
 .cta{margin-top:56px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .cta a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:2px;padding:20px 22px;transition:border-color .15s}
 .cta a:hover{border-color:var(--accent)}
-.cta small{display:block;font-size:11.5px;color:var(--accent);margin-bottom:6px}
+.cta small{display:block;font-size:11.5px;color:#c93509;margin-bottom:6px}
 .cta strong{font-family:'Space Grotesk',sans-serif;font-size:19px;font-weight:600}
 .cta span{display:block;margin-top:6px;font-size:14px;color:var(--mute)}
 .src{font-size:13.5px;color:var(--mute)}
@@ -83,7 +85,7 @@ td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-n
 .card[hidden]{display:none}
 .card .tags{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:'JetBrains Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:#c93509}
 .card .tags span:last-child{color:var(--mute)}
-.card h3{margin-top:10px;font-size:22px}
+.card h2,.card h3{margin-top:10px;font-size:22px}
 .card p{margin:8px 0 0;color:var(--mute);font-size:15px}
 article a.card{color:inherit;font-weight:inherit}
 .projects{display:grid;gap:14px;margin-top:20px}
@@ -204,8 +206,8 @@ ${ldFinal.map((o) => `<script type="application/ld+json">${JSON.stringify(o).rep
 ${banner}<header><div class="bar"><a class="logo" href="/">Paterson<span>.</span></a>
 <button class="menu" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i></button><nav class="mono" id="nav"><a href="/">Home</a><a href="/jobs">Live Roles</a><a href="/candidates">Candidates</a><a href="/clients">Clients</a><a href="/team">Team</a><a href="/contact">Contact</a></nav></div></header>
 <section class="banner"><svg class="ticks" aria-hidden="true"></svg><div class="hero">${backLink ? `<a class="back mono" href="${backLink.href}">&larr; ${esc(backLink.label)}</a>` : ""}<p class="eyebrow mono">/ ${esc(eyebrow)}</p><h1${wideH1 ? ` class="wide${wideH1 === "entry" ? " entry" : ""}"` : ''}>${h1}</h1><p class="lede">${lede}</p><p class="meta mono">${esc(meta)}</p></div><svg class="sky" id="sky" preserveAspectRatio="none" aria-hidden="true" data-seed="${seed}"></svg></section>
-<div class="wrap${toc.length ? "" : " notoc"}">${toc.length ? `<aside class="toc">${backLink ? `<a class="toc-back mono" href="${backLink.href}">&larr; ${esc(backLink.label)}</a>` : ""}<p class="mono">/ On this page</p>${toc.map(([id, t]) => `<a href="#${id}">${esc(t)}</a>`).join("")}</aside>` : ""}
-<article>${body}</article></div>
+<main><div class="wrap${toc.length ? "" : " notoc"}">${toc.length ? `<aside class="toc">${backLink ? `<a class="toc-back mono" href="${backLink.href}">&larr; ${esc(backLink.label)}</a>` : ""}<p class="mono">/ On this page</p>${toc.map(([id, t]) => `<a href="#${id}">${esc(t)}</a>`).join("")}</aside>` : ""}
+<article>${body}</article></div></main>
 <footer><svg class="foot-ticks" aria-hidden="true"></svg><div class="foot"><a class="logo" href="/">Paterson<span>.</span></a><p class="mono">For those who build</p>
 <div class="links mono"><a href="/jobs">Live Roles</a><a href="/candidates">Candidates</a><a href="/clients">Clients</a><a href="/team">Team</a><a href="/contact">Contact</a><a href="/how-we-work">How We Work</a><a href="/guides/construction-careers-nyc">Career Guide</a>${marketLink ? '<a href="/market-watch">Market Watch</a>' : ""}</div>
 <div class="legal mono"><span>© 2026 Paterson Group L.L.C-FZ</span><span><a href="/terms" style="color:#9a9a9a">Terms &amp; Conditions</a> · <a href="/privacy" style="color:#9a9a9a">Privacy Policy</a> · <a href="/disclaimer" style="color:#9a9a9a">Disclaimer</a></span><span>Across the US</span></div></div></footer>

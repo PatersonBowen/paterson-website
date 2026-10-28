@@ -45,7 +45,7 @@ window.addEventListener('resize',function(){t.scrollLeft=idx()*w();ui()});window
 const carouselHtml = (e) => {
   const c = e.carousel, n = c.images.length;
   const slides = c.images.map((f, i) => `<figure class="car-slide"><img src="/market-watch/images/${esc(f)}" alt="${esc(c.alts[i])}" width="1100" height="1100"${i ? ' loading="lazy"' : ' fetchpriority="high"'}></figure>`).join("");
-  return `<section class="carousel" aria-roledescription="carousel" aria-label="${esc(c.label || "Slides from the LinkedIn post")}"><div class="car-track" tabindex="0">${slides}</div><div class="car-ui"><button type="button" class="car-btn" data-dir="-1" aria-label="Previous slide">&larr; Prev</button><span class="car-count mono" aria-live="polite">1 / ${n}</span><button type="button" class="car-btn" data-dir="1" aria-label="Next slide">Next &rarr;</button></div><script>${CAROUSEL_JS}</script></section>`;
+  return `<section class="carousel" aria-roledescription="carousel" aria-label="${esc(c.label || "Slides from the LinkedIn post")}"><div class="car-track" tabindex="0">${slides}</div><div class="car-ui"><button type="button" class="car-btn" data-dir="-1" aria-label="Previous slide">&larr; Previous</button><span class="car-count mono" aria-live="polite">1 / ${n}</span><button type="button" class="car-btn" data-dir="1" aria-label="Next slide">Next &rarr;</button></div><script>${CAROUSEL_JS}</script></section>`;
 };
 
 function validate(entries) {
@@ -93,12 +93,12 @@ export function buildMarketWatch(outDir, entries = ENTRIES, opts = {}) {
   }
 
   // ---------------- list page
-  const card = (e) =>
-    `<a class="card${coverOf(e) ? " has-img" : ""}" href="/market-watch/${e.slug}" data-market="${esc(e.market)}" data-type="${esc(e.type)}">${coverOf(e) ? `<img src="/market-watch/images/${esc(coverOf(e))}" alt="" width="120" height="120" loading="lazy">` : ""}<div class="cbody"><div class="tags"><span>${esc(pretty(e.date))}</span><span>${esc(e.market)}</span><span>${esc(e.type)}</span></div><h3>${esc(e.title)}</h3><p>${esc(e.summary)}</p></div></a>`;
+  const card = (e, h = "h3") =>
+    `<a class="card${coverOf(e) ? " has-img" : ""}" href="/market-watch/${e.slug}" data-market="${esc(e.market)}" data-type="${esc(e.type)}">${coverOf(e) ? `<img src="/market-watch/images/${esc(coverOf(e))}" alt="" width="120" height="120" loading="lazy">` : ""}<div class="cbody"><div class="tags"><span>${esc(pretty(e.date))}</span><span>${esc(e.market)}</span><span>${esc(e.type)}</span></div><${h}>${esc(e.title)}</${h}><p>${esc(e.summary)}</p></div></a>`;
   const listBody = `
 <p>Market Watch follows notable construction and real estate projects across the US. Each update covers what is being built and what it means for hiring: which roles, which firms and what comes next.</p>
 <div class="cards">
-${sorted.map(card).join("\n")}
+${sorted.map((e) => card(e, "h2")).join("\n")}
 </div>
 ${cta}
 `;
