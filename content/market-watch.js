@@ -32,6 +32,53 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-10-29 */
+  {
+    slug: "behind-the-build-waldorf-astoria-300-biscayne-boulevard",
+    title: "Behind the Build: Waldorf Astoria, 300 Biscayne Boulevard",
+    date: "2026-10-29",
+    market: "Miami",
+    type: "Behind The Build",
+    image: "behind-the-build-waldorf-astoria-300-biscayne-boulevard.jpg",
+    imageAlt: "Behind the Build graphic: Waldorf Astoria, Biscayne Boulevard, Miami. The tower's offset glass volumes rising above Biscayne Bay at sunrise",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7521574070149079042",
+    summary:
+      "Florida's first supertall, the 100-storey Waldorf Astoria Hotel & Residences, is approaching its final height at 300 Biscayne Boulevard, with completion targeted for 2028.",
+    facts: [
+      ["Development", "Waldorf Astoria Hotel & Residences"],
+      // CONFIRM: the $1.2 billion estimated construction cost is from the post; no published source was found for it. The $668 million loan is sourced.
+      ["Estimated Construction Cost", "$1.2 Billion"],
+      ["Location", "300 Biscayne Boulevard, Downtown Miami"],
+    ],
+    intro: [
+      // CONFIRM: the 870 feet passed and "more than 90% sold" are from the post. Sources found show the structure at level 85 (Aug 2026) and 72% to 87% sold in 2022; no recent sales total was found.
+      // CONFIRM: Florida YIMBY (Aug 2026) says top-out this winter; the post says later this year. Completion Q2 2028 is sourced.
+      "Florida's first supertall is approaching its final height. The tower has passed 870 feet and is expected to top out at 1,049 feet later this year, with completion targeted for 2028. More than 90% of the residences have sold.",
+      // CONFIRM: 130,000 cubic yards of concrete and 23,000 tons of rebar are from the post; no source found. The 12,400 cubic yard foundation pour is sourced
+      // (Florida YIMBY: a 31-hour continuous mat pour in June 2024). The tuned mass damper is sourced, but not its 1,000 ton weight.
+      "Its nine offset glass volumes, extending outward in varying directions, have made it one of the most complex concrete structures in the city. The job required roughly 130,000 cubic yards of concrete and 23,000 tons of rebar. The foundations alone took 12,400 cubic yards of concrete in a single continuous pour. Near the top, a 1,000 ton tuned mass damper will counter the building's sway.",
+      "Once complete, the 100-storey tower will hold 205 hotel rooms and 387 residences, making it the tallest residential building south of New York City. It is financed by a $668 million construction loan from Bank OZK and Related Fund Management.",
+    ],
+    team: [
+      ["Developers", "Property Markets Group, Greybrook Realty Partners"],
+      ["Partners", "Mohari Hospitality, S2 Development LLC, Hilton Hotels & Resorts"],
+      ["Interior Design", "BAMO"],
+      ["General Contractor", "John Moriarty & Associates of Florida, Inc"],
+      ["Concrete Contractor", "Capform Inc."],
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      "As the Waldorf Astoria nears its peak, it is easy to forget the people behind the build. The numerous individuals who spend months and years of their lives developing, designing, managing and building our skylines often find themselves wondering what's next.",
+      "If this is you, or you would like to take part in a project like this, feel free to get in touch.",
+    ],
+    sources: [
+      { name: "Florida YIMBY: Waldorf Astoria Hotel & Residences Miami Begins Ninth and Final Cube as Supertall Nears Topping Out (August 2026)", url: "https://floridayimby.com/?p=41764" },
+      { name: "Florida YIMBY: Waldorf Astoria Hotel & Residences Miami Advances Into Sixth Cube as Construction Passes 60 Floors (February 2026)", url: "https://floridayimby.com/2026/02/waldorf-astoria-hotel-residences-miami-advances-into-sixth-cube-as-construction-passes-60-floors.html" },
+      { name: "Commercial Observer: PMG Scores $668M Record Construction Loan for Waldorf Astoria Tower in Miami", url: "https://commercialobserver.com/2024/06/pmg-waldorf-astoria-hotel-residences-miami-bank-ozk/" },
+      { name: "Bisnow: Waldorf Astoria Supertall Lands Florida's Largest Construction Loan Ever", url: "https://www.bisnow.com/news/south-florida/capital-markets/miamis-largest-loan-ever-to-fund-tallest-us-building-south-of-nyc-124705" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-10-27 */
   {
     slug: "the-2027-pipeline-four-projects-breaking-ground",
