@@ -32,6 +32,58 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-03 */
+  {
+    slug: "behind-the-build-343-madison-avenue",
+    title: "Behind the Build: 343 Madison Avenue, Midtown East",
+    date: "2026-11-03",
+    market: "New York",
+    type: "Behind The Build",
+    image: "behind-the-build-343-madison-avenue.jpg",
+    imageAlt: "Behind the Build graphic: 343 Madison Avenue, Midtown East, New York. The tower's glass podium floors lit at dusk beside the Chrysler Building",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7523368669108682752",
+    summary:
+      "BXP's 46-storey office tower at 343 Madison Avenue, steps from Grand Central, has reached podium level, with completion targeted for 2029.",
+    facts: [
+      ["Development", "343 Madison Avenue"],
+      // CONFIRM: the post labels this "Value: $2 Billion". Sources (BXP, trade press) give it as the estimated cost of the development, so it is labelled that way here.
+      ["Estimated Development Cost", "$2 Billion"],
+      ["Location", "343 Madison Avenue, Midtown East, New York"],
+    ],
+    intro: [
+      // CONFIRM: podium level is from the post and CRE Daily (citing the New York Post); no dated construction update was found. 844 feet is from New York YIMBY (Dec 2025);
+      // Banker Steel's project page says 900 feet, so the height differs by source. 46 storeys and about 930,000 sq ft are sourced.
+      "Just steps from Grand Central, BXP's 46-storey office tower has reached the podium level. The 844-foot tower replaces the former MTA headquarters and will deliver about 930,000 square feet of office space, with direct access to Grand Central's Madison Concourse.",
+      "Designed by KPF, it is all-electric, targets LEED Platinum and is due to complete in 2029.",
+      // CONFIRM: the post says BXP went vertical after its equity partner "walked away". BXP's filings show vertical construction began in July 2025 and that BXP acquired its partner's 45% interest on 27 August 2025;
+      // the 2023 partner was reported as Norges Bank Investment Management (Bisnow), but BXP's filing does not name the partner. Worded here as a buy-out, not a walk-away, so check before publishing.
+      "BXP's original equity partner, Norway's sovereign wealth fund, held 45% of the project; BXP bought that stake out in August 2025. Since then, Starr and McDermott Will & Schulte have signed, taking the building to 56% preleased. A $1.2 billion construction loan led by Wells Fargo has closed, and AVRS Partners has bought a 10.6% stake.",
+    ],
+    team: [
+      ["Developer", "Boston Properties (BXP)"],
+      ["Equity Partner", "AVRS Partners"],
+      ["Architect", "KPF"],
+      ["Structural Engineer", "Thornton Tomasetti"],
+      ["Construction Manager", "Turner Construction Company"],
+      ["Structural Steel", "Banker Steel"],
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      // CONFIRM: this closing was written to match the other entries; it is not in the LinkedIn post.
+      "A tower of this scale, going up above Grand Central, takes years of work from the people who develop, design, manage and build it. Many of them are already thinking about what comes next.",
+      "If that is you, or you would like to take part in a project like this, feel free to get in touch.",
+    ],
+    sources: [
+      { name: "BXP: BXP Secures $1.2 Billion Construction Loan for 343 Madison Avenue (July 2026)", url: "https://investors.bxp.com/news-releases/news-release-details/bxp-secures-12-billion-construction-loan-343-madison-avenue" },
+      { name: "Commercial Observer: BXP Sells Stake in 343 Madison Avenue Office Tower to AVRS Partners (October 2026)", url: "https://commercialobserver.com/2026/10/bxp-sells-stake-343-madison-avenue-office-avrs-partners/" },
+      { name: "CRE Daily: BXP's $2B 343 Madison Avenue Tower Hits Podium Level", url: "https://www.credaily.com/briefs/bxps-2b-343-madison-avenue-tower-hits-podium-level/" },
+      { name: "New York YIMBY: Excavation Underway for 844-Foot Skyscraper at 343 Madison Avenue (December 2025)", url: "https://newyorkyimby.com/2025/12/excavation-underway-for-844-foot-skyscraper-at-343-madison-avenue-in-midtown-east-manhattan.html" },
+      { name: "KPF: Vertical Construction Commences on 343 Madison Avenue", url: "https://www.kpf.com/news/vertical-construction-commences-on-343-madison-avenue" },
+      { name: "Turner: Turner Selected by BXP to Build Tower at 343 Madison Avenue", url: "https://www.hochtief.de/aktuelles-medien/pressemitteilungen/pressemitteilung/turner-selected-by-bxp-to-build-tower-at-343-madison-avenue" },
+      { name: "Banker Steel: 343 Madison Avenue", url: "https://www.bankersteel.com/343-madison-ave/" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-10-29 */
   {
     slug: "behind-the-build-waldorf-astoria-300-biscayne-boulevard",
