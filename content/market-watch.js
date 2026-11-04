@@ -32,6 +32,74 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-04 */
+  {
+    slug: "behind-the-build-the-flatiron-building-175-fifth-avenue",
+    title: "Behind the Build: The Flatiron Building, 175 Fifth Avenue",
+    date: "2026-11-04",
+    market: "New York",
+    type: "Behind The Build",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7523746281307947008",
+    carousel: {
+      label: "Slides from the LinkedIn post: Behind the Build, the Flatiron Building at 175 Fifth Avenue, Manhattan, converted from landmark offices to 36 private residences",
+      images: [
+        "behind-the-build-the-flatiron-building-1.jpg",
+        "behind-the-build-the-flatiron-building-2.jpg",
+        "behind-the-build-the-flatiron-building-3.jpg",
+        "behind-the-build-the-flatiron-building-4.jpg",
+        "behind-the-build-the-flatiron-building-5.jpg",
+      ],
+      alts: [
+        "Slide 1 of 5, Behind the Build: The Flatiron Building. From landmark offices to 36 private residences. 175 Fifth Avenue, Manhattan. The wedge-shaped tower at dusk with One World Trade Center behind.",
+        "Slide 2 of 5, 124 years. A new chapter. Designed by Daniel Burnham. Completed in 1902. Opened to residents for the first time in 2026. Nearly seven years under scaffolding. The facade in scaffolding and netting.",
+        "Slide 3 of 5, Preserving the original. More than 1,000 windows replaced, thousands of terracotta pieces restored or recast, and a 6-foot cornice restored. Exterior work carried out in coordination with the Landmarks Preservation Commission.",
+        "Slide 4 of 5, 82% in contract. 18 of 22 publicly listed homes, as of August 2026. 36 residences, an approximate listing range of $11 million to $58.5 million, and great rooms of more than 70 feet. An open-plan great room and kitchen.",
+        "Slide 5 of 5, The people who know how to do this are worth knowing. Developers: Brodsky Organization and Sorgente Group. Construction Manager: AECOM Tishman. Executive Architect: SLCE Architects. Interior Design: Studio Sofield. Preservation Consultant: Beyer Blinder Belle. Lighting Design: L'Observatoire International.",
+      ],
+    },
+    summary:
+      "The Flatiron Building at 175 Fifth Avenue has opened to residents for the first time in its 124-year history, converted from landmark offices into 36 condominiums.",
+    facts: [
+      ["Development", "The Flatiron Building"],
+      // CONFIRM: the post says 36 residences across 22 storeys. 36 residences is confirmed by Rob Report (August 2026), but earlier coverage gave 38 (offering plan), 40 and 60. Storeys differ by source: Wikipedia gives 22, Newsweek 24.
+      ["Scale", "36 residences across 22 storeys"],
+      ["Location", "175 Fifth Avenue, Flatiron District, Manhattan"],
+    ],
+    intro: [
+      // CONFIRM: designer, 1902, landmark designation in 1966 and Macmillan leaving in 2019 are sourced (Wikipedia). The Fuller Company headquarters is sourced; "nearly 60 years" for Macmillan is from the post.
+      "Designed by Daniel Burnham and completed in 1902, the Flatiron was built as the headquarters of the George A. Fuller Company, a pioneering American general contractor. It is one of New York's oldest surviving skyscrapers and was designated a city landmark in 1966. For more than a century it was an office building, most famously home to Macmillan Publishers for nearly 60 years until 2019.",
+      // CONFIRM: "nearly seven years under scaffolding" is from the post; New York YIMBY says seven years and Time Out nearly six. "Opened to residents" is from the post and trade coverage ("first residents"); closings continue.
+      "After nearly seven years under scaffolding, the building has opened to residents for the first time in its 124 year history, converted from offices into 36 condominiums.",
+      // CONFIRM: more than 1,000 windows, thousands of terracotta pieces, the six-foot cornice and the Landmarks Preservation Commission are sourced (Newsweek, Milrose).
+      "The exterior work alone was a major project: more than 1,000 windows replaced, thousands of terracotta pieces restored or recast, and the six foot cornice restored, all carried out in coordination with the Landmarks Preservation Commission.",
+      // CONFIRM: Studio Sofield and the $11 million starting price are sourced; the $58.5 million top price is from Rob Report (a five-bedroom penthouse). The one-north-one-south layout and the 70-foot great rooms are from the post.
+      // 18 of 22 publicly listed homes under contract by August is from the post; no source was found for the 22-home listed count or the 18 figure (earlier reports gave three, then nearly a dozen, in contract).
+      "Inside, Studio Sofield turned a gutted, wedge shaped office building into homes with one apartment facing north and one facing south on most floors, and great rooms of more than 70 feet. Homes were listed from about $11 million to $58.5 million, and by August, 18 of the 22 publicly listed homes were under contract.",
+    ],
+    team: [
+      ["Developers", "The Brodsky Organization, Sorgente Group"],
+      // CONFIRM: the construction manager, executive architect, preservation consultant and lighting designer are from the post; trade coverage names AECOM Tishman, SLCE, Beyer Blinder Belle and L'Observatoire International, but the pages opened did not state them.
+      ["Construction Manager", "AECOM Tishman"],
+      ["Executive Architect", "SLCE Architects"],
+      ["Interior Design", "Studio Sofield"],
+      ["Preservation Consultant", "Beyer Blinder Belle"],
+      ["Lighting Design", "L'Observatoire International"],
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      "Converting a landmark means every new duct, riser and elevator has to fit inside a building that cannot visibly change. The people who know how to do that are worth knowing.",
+      "If you were part of this project, we would like to hear how it was done.",
+    ],
+    sources: [
+      { name: "Rob Report: Flatiron Building Residences (August 2026)", url: "https://robbreport.com.sg/flatiron-building-residences/" },
+      { name: "Newsweek: NYC Flatiron Building Transformation Into Private Residences", url: "https://newsweek.com/nyc-flatiron-building-transformation-private-residences-landmark-11089859" },
+      { name: "Construction Owners: Flatiron Building Becomes Luxury Residences (November 2025)", url: "https://www.constructionowners.com/news/flatiron-building-becomes-luxury-residences" },
+      { name: "Milrose Consultants: Flatiron Building", url: "https://www.milrose.com/project/flatiron-building/" },
+      { name: "6sqft: Flatiron Building will be illuminated at night for the first time as part of condo conversion", url: "https://www.6sqft.com/flatiron-building-will-be-illuminated-at-night-for-the-first-time-as-part-of-condo-conversion/" },
+      { name: "Wikipedia: Flatiron Building", url: "https://en.wikipedia.org/wiki/Flatiron_Building" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-11-03 */
   {
     slug: "behind-the-build-343-madison-avenue",
