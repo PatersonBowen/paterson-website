@@ -32,6 +32,66 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-06 */
+  {
+    slug: "spotlight-tishman-aecom-tishman",
+    title: "Spotlight: Tishman, Now AECOM Tishman",
+    date: "2026-11-06",
+    market: "New York",
+    type: "Spotlight",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7524480022427004929",
+    // CONFIRM: credits are from the post and are matched to the slides in the order the post lists them. CC BY-SA images are shown with their credit; check the licence wording is acceptable.
+    imageCredit:
+      "Image credits, in slide order: 1. Gaiusahala / Wikimedia Commons, CC BY-SA 4.0 (modified). 2. Detroit Publishing Co. / Library of Congress (public domain). 3. Madison Square Garden, 1968 / Wikimedia Commons (public domain). 4. Joe Ravi / Wikimedia Commons, CC BY-SA 3.0 (modified). 5. Olga1969 / Wikimedia Commons, CC BY-SA 4.0 (modified).",
+    carousel: {
+      label: "Slides from the LinkedIn post: Spotlight on Tishman, from Lower Manhattan tenements to the World Trade Center, now AECOM Tishman",
+      images: [
+        "spotlight-tishman-1.jpg",
+        "spotlight-tishman-2.jpg",
+        "spotlight-tishman-3.jpg",
+        "spotlight-tishman-4.jpg",
+        "spotlight-tishman-5.jpg",
+      ],
+      alts: [
+        "Slide 1 of 5, Spotlight: Tishman, 1898 to today. From Lower Manhattan tenements to the World Trade Center, twice. A glass tower seen from street level between neighbouring buildings.",
+        "Slide 2 of 5, A family business, 1898. Julius Tishman builds a six-storey tenement on the Lower East Side. Julius Tishman and Sons is born. A crowded Lower East Side street lined with tenements and market stalls.",
+        "Slide 3 of 5, A new way to build, 1960s. While building Madison Square Garden, John L. Tishman develops and popularises construction management. The arena filled with spectators during a basketball game.",
+        "Slide 4 of 5, Building America's skylines, 1960s to 1980s. The John Hancock Center in Chicago, the original World Trade Center, Detroit's Renaissance Center and Epcot. The John Hancock Center seen from below.",
+        "Slide 5 of 5, AECOM Tishman, 2001 to today. Rebuilt 7 World Trade Center, then managed One, Three and Four and, in a joint venture, the Transportation Hub. Part of AECOM since 2010. One World Trade Center at dusk.",
+      ],
+    },
+    summary:
+      "Founded in 1898, Tishman developed and popularised construction management, built the original World Trade Center and returned to rebuild the site after 9/11. It is now part of AECOM.",
+    facts: [
+      ["Company", "Tishman"],
+      ["Founded", "1898, New York"],
+      ["Today", "AECOM Tishman"],
+    ],
+    intro: [
+      // CONFIRM: 1898 and Julius Tishman are sourced (Wikipedia). The sources differ on the start: one says he bought the tenement he lived in and then more residential properties; "built a six-storey tenement" is from the post.
+      // Tishman Realty & Construction going public in 1928 is sourced.
+      "In 1898, Julius Tishman, a Polish immigrant, used the profits from his upstate department store to build a six-storey tenement on Manhattan's Lower East Side. By 1928, Tishman Realty & Construction had gone public.",
+      // CONFIRM: that the firm worked on Madison Square Garden in the 1960s and 1970s is sourced (Wikipedia). John L. Tishman as the developer of construction management is from the post; no source that could be opened states it, though trade press calls him a construction management pioneer.
+      "In the 1960s, while building Madison Square Garden, John L. Tishman developed and popularised construction management: one firm overseeing the planning, design and construction of a project to control time, cost and quality. It is now how much of the industry delivers its largest work.",
+      // CONFIRM: the original World Trade Center, John Hancock Center, Epcot and Renaissance Center are sourced (Wikipedia). "Three of the world's earliest 100-storey towers" is from the post.
+      "Tishman went on to build the original World Trade Center and the John Hancock Center in Chicago, three of the world's earliest 100-storey towers, along with Epcot and Detroit's Renaissance Center.",
+      // CONFIRM: rebuilding 7 World Trade Center (2002-2006) and construction management of One World Trade Center and the Transportation Hub are sourced; Three and Four World Trade Center are listed as Tishman projects.
+      // The Turner joint venture on the Transportation Hub is from the post; no source was found for it.
+      "After 9/11, it returned to the same site. It rebuilt 7 World Trade Center, the first tower to rise after the attacks, then served as construction manager for One, Three and Four World Trade Center and, in a joint venture with Turner, the Transportation Hub.",
+      // AECOM acquired Tishman Construction in 2010 for $245 million: confirmed by AECOM's SEC filing (closed 14 July 2010).
+      "AECOM acquired Tishman Construction in 2010 for $245 million. More than 125 years on, the name is still on some of New York's most complex jobs.",
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      "Few firms have shaped the skyline of New York as much as AECOM Tishman.",
+    ],
+    sources: [
+      { name: "Wikipedia: Tishman (company)", url: "https://en.wikipedia.org/wiki/Tishman_(company)" },
+      { name: "AECOM: Form 8-K on the acquisition of Tishman Construction (2010)", url: "https://www.sec.gov/Archives/edgar/data/0000868857/000110465910038046/a10-14052_18k.htm" },
+      { name: "Engineering News-Record: AECOM acquires Tishman Construction", url: "https://enr.com/blogs/23-ny-construction-central/post/15499-aecom-acquires-tishman-construction" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-11-04 */
   {
     slug: "behind-the-build-the-flatiron-building-175-fifth-avenue",
