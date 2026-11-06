@@ -116,6 +116,7 @@ article a.card{color:inherit;font-weight:inherit}
 .hero-img{margin:0 0 26px}
 .hero-img img{display:block;width:100%;max-width:520px;height:auto;border:1px solid var(--line);border-radius:2px}
 .hero-img figcaption{margin-top:8px;font-size:12px;color:var(--mute)}
+.img-credit{margin:-14px 0 26px;font-size:12px;line-height:1.5;color:var(--mute)}
 .card.has-img{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:start}
 .card.has-img[hidden]{display:none}
 .card img{display:block;width:120px;height:120px;object-fit:cover;border-radius:2px}

@@ -135,13 +135,13 @@ ${e.projects.map((p) => `<div class="project"><h3>${esc(p.name)}</h3>${p.locatio
 </div>`
       : "";
     const others = sorted.filter((o) => o.slug !== e.slug).slice(0, 3);
-    const more = others.length ? `<h2 id="more">More From Market Watch</h2>\n<div class="cards">\n${others.map(card).join("\n")}\n</div>\n<p><a href="/market-watch">See all updates</a></p>` : `<p><a href="/market-watch">See all Market Watch updates</a></p>`;
+    const more = others.length ? `<h2 id="more">More From Market Watch</h2>\n<div class="cards">\n${others.map((o) => card(o)).join("\n")}\n</div>\n<p><a href="/market-watch">See all updates</a></p>` : `<p><a href="/market-watch">See all Market Watch updates</a></p>`;
     const factsHtml = (e.facts || []).length ? `<dl class="facts">${e.facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>` : "";
     const statsHtml = (e.stats || []).length ? `<div class="stats">${e.stats.map((s) => `<div><b>${esc(s.value)}</b><span>${esc(s.label)}</span><small>${esc(s.source)}</small></div>`).join("")}</div>` : "";
     const teamHtml = (e.team || []).length ? `<h2 id="team">The Team Behind the Build</h2>\n<div class="tbl"><table><tbody>${e.team.map(([k, v]) => `<tr><td><b>${esc(k)}</b></td><td>${esc(v)}</td></tr>`).join("")}</tbody></table></div>` : "";
     const sourcesHtml = (e.sources || []).length ? `<h2 id="sources">Sources</h2>\n<ul class="src">${e.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a></li>`).join("")}</ul>` : "";
     const imgUrl = coverOf(e) ? `${SITE}/market-watch/images/${coverOf(e)}` : "";
-    const figure = e.carousel ? carouselHtml(e) : e.image ? `<figure class="hero-img"><img src="/market-watch/images/${esc(e.image)}" alt="${esc(e.imageAlt)}" width="800" height="800" fetchpriority="high">${e.imageCredit ? `<figcaption>${esc(e.imageCredit)}</figcaption>` : ""}</figure>` : "";
+    const figure = e.carousel ? carouselHtml(e) + (e.imageCredit ? `<p class="img-credit">${esc(e.imageCredit)}</p>` : "") : e.image ? `<figure class="hero-img"><img src="/market-watch/images/${esc(e.image)}" alt="${esc(e.imageAlt)}" width="800" height="800" fetchpriority="high">${e.imageCredit ? `<figcaption>${esc(e.imageCredit)}</figcaption>` : ""}</figure>` : "";
     const liLink = e.linkedinUrl ? `<p class="li-link"><span>First shared on LinkedIn</span><a href="${esc(e.linkedinUrl)}" target="_blank" rel="noopener noreferrer">View the original post</a></p>` : "";
     const body = `
 ${figure}
