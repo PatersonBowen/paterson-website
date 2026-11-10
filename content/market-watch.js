@@ -32,6 +32,31 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-09 */
+  {
+    slug: "hiring-insight-pipeline-is-the-first-question",
+    title: "Hiring Insight: Pipeline Is the First Question",
+    date: "2026-11-09",
+    market: "US-wide",
+    type: "Hiring Insight",
+    image: "hiring-insight-pipeline-is-the-first-question.jpg",
+    imageAlt: "Hiring Insight graphic: even Assistant PMs now ask about your pipeline before the title or the package",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7525648737919115264",
+    summary:
+      "Senior construction professionals have always asked about a firm's pipeline before a move. Paterson now hears it from Assistant Project Managers too: what is the backlog, and will this firm still need me in two years?",
+    intro: [
+      // CONFIRM: this is Paterson's own observation from its candidate conversations, as in the post. It is not drawn from a published survey, so there are no sources to cite.
+      "Ask any senior construction professional what they want to know before a move, and pipeline will be near the top. It is the obvious question. Project Managers and Superintendents have seen what happens when a firm wins one big job and has nothing lined up behind it.",
+      "What we did not expect is how early in a career that question now comes up. Assistant Project Managers are starting to ask it too: what is the backlog, and will this firm still need me in two years? For many, that now matters more than a title change or a bump in pay.",
+    ],
+    hiringView: [
+      // The post read "the one your are hiring for now"; corrected to "you are".
+      "For firms hiring at any level, the clearest pitch is often the work ahead. Show the candidates the next three projects, not just the one you are hiring for now.",
+      "If you are hiring, have you noticed the same shift?",
+    ],
+    sources: [],
+  },
+
   /* ---------------------------------------------------------- 2026-11-06 */
   {
     slug: "spotlight-tishman-aecom-tishman",
