@@ -32,6 +32,51 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-10 */
+  {
+    slug: "teardown-why-senior-construction-job-ads-get-ignored",
+    title: "Teardown: Why Senior Construction Job Ads Get Ignored",
+    date: "2026-11-10",
+    market: "US-wide",
+    type: "Teardown",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7525963206339682305",
+    carousel: {
+      label: "Slides from the LinkedIn post: Teardown, why senior construction job ads get ignored, four common mistakes and what to write instead",
+      images: [
+        "teardown-why-job-ads-get-ignored-1.jpg",
+        "teardown-why-job-ads-get-ignored-2.jpg",
+        "teardown-why-job-ads-get-ignored-3.jpg",
+        "teardown-why-job-ads-get-ignored-4.jpg",
+        "teardown-why-job-ads-get-ignored-5.jpg",
+        "teardown-why-job-ads-get-ignored-6.jpg",
+      ],
+      alts: [
+        "Slide 1 of 6, Teardown: why senior construction job ads get ignored. Four common mistakes, and what to write instead.",
+        "Slide 2 of 6, Mistake 01: leading with the title. Instead of “Project Executive. Exciting opportunity.” try “Project Executive. Ground-up residential tower, Brooklyn.” Titles mean different things at every firm. The project tells people what the job is.",
+        "Slide 3 of 6, Mistake 02: hiding the pipeline. Instead of “Join a growing firm with a strong backlog.” try “Two projects in precon for 2027. This hire leads the first.” The first thing a strong candidate asks is whether you will still need them next year.",
+        "Slide 4 of 6, Mistake 03: no salary range. Instead of “Competitive salary and benefits.” try “$[X]–$[Y] base, plus bonus.” A range up front means you are not wasting the candidate's time, or your own.",
+        "Slide 5 of 6, Mistake 04: a scope that could be any job. Instead of “Oversee projects from start to finish.” try “Run a 12-person site team, reporting to the VP of Construction.” Experienced people want to know who they lead, who they report to and what they own.",
+        "Slide 6 of 6, What makes you scroll past a job ad? Tell us in the comments. We will share the best answers.",
+      ],
+    },
+    summary:
+      "Most senior construction job ads are a title, a list of duties and “competitive salary”. Four common mistakes, and what to write instead.",
+    intro: [
+      // CONFIRM: this is Paterson's own advice, as in the post, so there are no sources to cite. The example wording in each "try" line is from the graphics.
+      "Most senior construction job ads are written the same way: a title, a list of duties and “competitive salary”. Then firms wonder why the people they want never apply. Here are four mistakes we see again and again, and what to write instead.",
+      "1. Leading with the title instead of the project. Instead of “Project Executive. Exciting opportunity.”, try “Project Executive. Ground-up residential tower, Brooklyn.” Titles mean different things at every firm. The project tells people what the job is.",
+      "2. Hiding the pipeline. Instead of “Join a growing firm with a strong backlog.”, try “Two projects in precon for 2027. This hire leads the first.” The first thing a strong candidate asks is whether you will still need them next year.",
+      "3. No salary range. Instead of “Competitive salary and benefits.”, try “$[X]–$[Y] base, plus bonus.” A range up front means you are not wasting the candidate's time, or your own.",
+      "4. A scope that could describe any job. Instead of “Oversee projects from start to finish.”, try “Run a 12-person site team, reporting to the VP of Construction.” Experienced people want to know who they lead, who they report to and what they own.",
+    ],
+    hiringView: [
+      "None of these fixes cost anything. They just require saying what the job actually is.",
+      // CONFIRM: the post asks readers to answer in the comments; adapted here for the website.
+      "What makes you scroll past a job ad, or stop and read it? We would like to hear from you.",
+    ],
+    sources: [],
+  },
+
   /* ---------------------------------------------------------- 2026-11-09 */
   {
     slug: "hiring-insight-pipeline-is-the-first-question",
