@@ -32,6 +32,91 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-18 */
+  {
+    slug: "behind-the-build-faena-residences-miami",
+    title: "Behind the Build: Faena Residences Miami",
+    date: "2026-11-18",
+    market: "Miami",
+    type: "Behind The Build",
+    image: "behind-the-build-faena-residences-miami.jpg",
+    imageAlt: "Behind the Build graphic: Faena Residences Miami, 24 SW 4th Street, Miami River. Twin 68-storey towers joined by an elevated bridge, with the FAENA sign on the right-hand tower",
+    imageCredit: "Rendering: Binyan Studios",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7528824151323590657",
+    summary:
+      "Twin 68-storey towers on the Miami River, backed by an $817 million construction loan reported as the largest in Florida's history, are due to complete in early 2030.",
+    facts: [
+      ["Development", "Faena Residences Miami"],
+      ["Construction Financing", "$817 Million"],
+      ["Location", "24 SW 4th Street, Miami River, Downtown Miami"],
+    ],
+    intro: [
+      // CONFIRM: the post says ground has officially broken. Neither Bisnow (29 Oct 2026) nor Commercial Observer (28 Oct 2026) states a groundbreaking; Bisnow notes only that a 2023 Bank OZK loan started the first phase,
+      // and one listing site says construction has not begun. About 800 feet is also not stated in the sources found; the 68-storey count and the Brickell City Centre location are from the post.
+      "Ground has officially broken on Faena Residences Miami, a pair of 68-storey towers rising approximately 800 feet along the Miami River, directly opposite Brickell City Centre.",
+      // CONFIRM: the $817 million loan from Tyko Capital arranged by Walker & Dunlop and more than $500 million in sales are sourced (Bisnow, Commercial Observer), as is the $30 million penthouse purchase.
+      // Commercial Observer and Bisnow call it Florida's largest construction loan of any kind; the post says largest condominium construction financing.
+      "The project is backed by an $817 million construction loan from Tyko Capital, arranged by Walker & Dunlop and reported as the largest condominium construction financing in Florida's history. More than $500 million in sales have been recorded, including a $30 million duplex penthouse.",
+      // CONFIRM: 434 residences (217 per tower), Rafael Viñoly Architects and completion in 2030 (early 2030 per Bisnow) are sourced. The elevated bridge on floors 61 to 64 is sourced; the 45,000 sq ft figure for Faena Rose
+      // appears in one source only. "Among the final major projects designed by the late Rafael Viñoly" is from the post.
+      "The towers will deliver 434 residences, linked by an elevated bridge spanning floors 61 to 64 that houses Faena Rose, a 45,000 square foot private cultural and social club complete with an infinity pool overlooking the river. The development is among the final major projects designed by the late Rafael Viñoly. Completion is anticipated in early 2030.",
+    ],
+    team: [
+      ["Developers", "Fortune International Group, KAR Properties, Faena"],
+      ["Architect", "Rafael Viñoly Architects"],
+      // CONFIRM: the general contractor, interior designers and landscape architect are from the post; none was named in the sources found.
+      ["General Contractor", "Coastal Construction Company"],
+      ["Lender", "Tyko Capital"],
+      ["Financing Advisor", "Walker & Dunlop"],
+      ["Interior Design", "Faena, Bryan O'Sullivan Studio"],
+      ["Landscape Architect", "Sasaki"],
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      "Building two identical towers joined more than 60 storeys up, on a riverfront site, takes structural, logistics and site leadership of the highest order, and the work is only just beginning.",
+      "If you build at this level and are thinking about your next project, get in touch.",
+    ],
+    sources: [
+      { name: "Bisnow: Tyko Capital Sets New Record For Florida's Largest Construction Loan (October 2026)", url: "https://www.bisnow.com/news/national/capital-markets/tyko-capital-817m-construction-loan-faena-condos" },
+      { name: "Commercial Observer: Fortune Lands Record $817M From Tyko Capital to Build Miami Faena Condo Towers (October 2026)", url: "https://commercialobserver.com/?p=584542" },
+      { name: "Galerie: Alan Faena Charts a Daring New Vision on the Miami River", url: "https://galeriemagazine.com/faena-residences-miami-collaboratory/" },
+    ],
+  },
+
+  /* ---------------------------------------------------------- 2026-11-13 */
+  {
+    slug: "unpopular-view-the-talent-shortage-is-partly-self-inflicted",
+    title: "Unpopular View: The Talent Shortage Is Partly Self-Inflicted",
+    date: "2026-11-13",
+    market: "US-wide",
+    type: "Unpopular View",
+    image: "unpopular-view-talent-shortage-partly-self-inflicted.jpg",
+    imageAlt: "Unpopular View graphic: the talent shortage is partly self-inflicted. 74% of firms struggle to hire project managers, yet many have assistant project managers waiting to be promoted. Source: AGC and NCCER 2026 Workforce Survey",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7526995108819398657",
+    summary:
+      "75% of firms looking for superintendents and 74% looking for project managers say they struggle to hire, yet many have capable assistant PMs and project engineers waiting years for a promotion.",
+    stats: [
+      { value: "75%", label: "of firms with openings struggle to fill superintendent roles.", source: "AGC and NCCER, 2026 Workforce Survey" },
+      { value: "74%", label: "of firms with openings struggle to fill project manager and supervisor roles.", source: "AGC and NCCER, 2026 Workforce Survey" },
+    ],
+    intro: [
+      // CONFIRM: the 75% (superintendents) and 74% (project managers/supervisors) figures are verified in the survey's national results chart ("% of firms with openings that report difficulty in filling salaried positions").
+      "Our view, and an unpopular one: construction's “talent shortage” is partly self-inflicted. 75% of firms looking for superintendents say they are struggling to hire one. For project managers and supervisors it is 74% (AGC and NCCER 2026 Workforce Survey).",
+      // CONFIRM: the rest of this entry is Paterson's own observation from its work, as in the post; it is not drawn from a published source.
+      "Yet many of the same firms have capable assistant project managers and project engineers who have waited years for a promotion that never quite arrives. They are told they need “one more project” first.",
+      // The post ran these sentences together ("reason.The talent"); a space was added.
+      "So the firm goes to market for a PM. It pays more than it would have cost to promote from within, and the person it hires was often stuck at a competitor for the same reason. The talent exists. Much of it is waiting for someone to give it a project.",
+    ],
+    hiringView: [
+      "Is your firm promoting its own people quickly enough? Or is hiring from outside simply easier?",
+      "We would like to hear how you are handling it.",
+    ],
+    sources: [
+      { name: "AGC and NCCER: 2026 Workforce Survey, National Results", url: "https://www.agc.org/sites/default/files/users/user21902/2026%20AGC%20WFS%20NCCER%20(3).pdf" },
+      { name: "AGC: Construction workforce shortages remain acute despite soft market conditions as data centers strain labor supply (September 3, 2026)", url: "https://www.agc.org/news/2026/09/03/construction-workforce-shortages-remain-acute-despite-soft-market-conditions-data-centers-strain" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-11-10 */
   {
     slug: "teardown-why-senior-construction-job-ads-get-ignored",
