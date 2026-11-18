@@ -12,7 +12,14 @@
     { "source": "/services", "destination": "/clients", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
+    { "source": "/api/team", "destination": "/data/team.json" },
+    { "source": "/api/jobs", "destination": "/data/jobs.json" },
     { "source": "/jobs/:slug", "destination": "/_job" }
+  ],
+  "headers": [
+    {
+      "source": "/data/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, stale-while-revalidate=3600" }]
+    }
   ]
 }

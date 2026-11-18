@@ -1,0 +1,132 @@
+// Reads the live Jobs and Team tables from Airtable. Used only at build time (scripts/data-snapshot.mjs),
+// so the website never calls Airtable while visitors browse and the monthly API quota is barely touched.
+//
+// Env vars (set in Vercel Project Settings -> Environment Variables, available during the build):
+//   AIRTABLE_BASE_ID   e.g. appXXXXXXXXXXXXXX
+//   AIRTABLE_TOKEN     Personal Access Token, scope data.records:read, access limited to this base
+
+export const JOBS_TABLE = "tblmtcEqt7W8njXOC";
+export const TEAM_TABLE = "tblV2ojEfb5xzRv9a";
+
+export function airtableConfigured() {
+  return Boolean(process.env.AIRTABLE_BASE_ID && process.env.AIRTABLE_TOKEN);
+}
+
+// Every record whose Status is "Live". Throws on any Airtable error (including the monthly quota being used up).
+async function fetchLiveRecords(table) {
+  const baseId = process.env.AIRTABLE_BASE_ID;
+  const token = process.env.AIRTABLE_TOKEN;
+  if (!baseId || !token) throw new Error("Missing AIRTABLE_BASE_ID or AIRTABLE_TOKEN");
+  const records = [];
+  let offset;
+  do {
+    const url = new URL(`https://api.airtable.com/v0/${baseId}/${encodeURIComponent(table)}`);
+    url.searchParams.set("filterByFormula", "{Status}='Live'");
+    url.searchParams.set("pageSize", "100");
+    if (offset) url.searchParams.set("offset", offset);
+    const resp = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
+    if (!resp.ok) {
+      const text = await resp.text();
+      throw new Error(`Airtable ${resp.status}: ${text.slice(0, 200)}`);
+    }
+    const data = await resp.json();
+    records.push(...data.records);
+    offset = data.offset;
+  } while (offset);
+  return records;
+}
+
+const splitLines = (val) => (val || "").split("\n").map((s) => s.trim()).filter(Boolean);
+
+export async function fetchJobs() {
+  const records = await fetchLiveRecords(JOBS_TABLE);
+  return records.map((r) => {
+    const f = r.fields;
+    return {
+      id: r.id,
+      title: f.Title || "",
+      company: f.Company || "",
+      location: f.Location || "",
+      sector: f.Sector || "",
+      market: f.Market || "",
+      employmentType: f["Employment Type"] || "",
+      scale: f.Scale || "",
+      salaryMin: typeof f["Salary Min"] === "number" ? f["Salary Min"] : null,
+      salaryMax: typeof f["Salary Max"] === "number" ? f["Salary Max"] : null,
+      postedAt: f["Posted At"] || null,
+      summary: f.Summary || "",
+      fullDescription: f["Full Description"] || f.Summary || "",
+      description: splitLines(f.Description),
+      requirements: splitLines(f.Requirements),
+      slug: f.Slug || r.id,
+    };
+  });
+}
+
+// The LinkedIn column can be named a few ways in Airtable ("LinkedIn", "Linkedin", "LinkedIn URL", ...)
+// and people paste links in different shapes. Return one clean https LinkedIn URL, or "" if there isn't one.
+function pickLinkedIn(fields) {
+  const key = Object.keys(fields).find((k) => /linked\s*-?\s*in/i.test(k));
+  let v = key ? fields[key] : "";
+  if (Array.isArray(v)) v = v[0];
+  if (v && typeof v === "object") v = v.url || v.href || v.text || "";
+  v = String(v || "").trim().replace(/^<|>$/g, "");
+  if (!v) return "";
+  if (/^[A-Za-z0-9_%.-]+$/.test(v) && !/\./.test(v)) v = "https://www.linkedin.com/in/" + v; // bare profile name
+  else if (/^\/\//.test(v)) v = "https:" + v;
+  else if (/^in\//i.test(v)) v = "https://www.linkedin.com/" + v;
+  else if (!/^[a-z][a-z0-9+.-]*:/i.test(v)) v = "https://" + v; // "linkedin.com/in/..." or "www.linkedin.com/..."
+  try {
+    const u = new URL(v);
+    const host = u.hostname.replace(/^www\./, "");
+    if (!/^https?:$/.test(u.protocol)) return "";
+    if (host !== "linkedin.com" && !host.endsWith(".linkedin.com") && host !== "lnkd.in") return "";
+    return u.toString();
+  } catch (e) {
+    return "";
+  }
+}
+
+// Display order comes from an "Order" number column in Airtable (1 shows first). People without a
+// number come after everyone who has one, A to Z by name.
+function pickOrder(fields) {
+  const key = Object.keys(fields).find((k) => /^\s*(display\s*)?(order|sort(\s*order)?|rank|position)\s*$/i.test(k));
+  if (!key) return null;
+  const v = fields[key];
+  const n = typeof v === "number" ? v : parseFloat(String(v == null ? "" : v).trim());
+  return Number.isFinite(n) ? n : null;
+}
+
+function sortMembers(members) {
+  return members.sort((a, b) => {
+    if (a.order !== null && b.order !== null && a.order !== b.order) return a.order - b.order;
+    if (a.order !== null && b.order === null) return -1;
+    if (a.order === null && b.order !== null) return 1;
+    return (a.name || "").localeCompare(b.name || "");
+  });
+}
+
+export async function fetchTeam() {
+  const records = await fetchLiveRecords(TEAM_TABLE);
+  const initialsOf = (name) =>
+    (name || "").split(" ").filter(Boolean).map((w) => w[0].toUpperCase()).slice(0, 2).join("");
+  const members = records.map((r) => {
+    const f = r.fields;
+    const photoAttachment = Array.isArray(f.Photo) && f.Photo.length ? f.Photo[0] : null;
+    return {
+      id: r.id,
+      name: f.Name || "",
+      role: f.Role || "",
+      bio: f.Bio || "",
+      phone: f.Phone || "",
+      email: f.Email || "",
+      linkedin: pickLinkedIn(f),
+      order: pickOrder(f),
+      level: f.Level || "",
+      area: f.Area || "",
+      photoUrl: photoAttachment ? photoAttachment.url : "",
+      initials: initialsOf(f.Name),
+    };
+  });
+  return sortMembers(members);
+}

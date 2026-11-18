@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "id": "saved-cameron-jones",
+      "name": "Cameron Jones",
+      "role": "Managing Partner",
+      "bio": "Runs the firm's day-to-day search. Operating across all sectors of General Contracting, with an extensive network across the East Coast.",
+      "phone": "+1 (716) 351 3122",
+      "email": "Cameron.Jones@patersoncompany.com",
+      "linkedin": "https://www.linkedin.com/in/cameron-jones-1a9734212/",
+      "order": 1,
+      "level": "Managing Partner",
+      "area": "NYC | Miami",
+      "photoUrl": "",
+      "initials": "CJ"
+    },
+    {
+      "id": "saved-nelson-bowen",
+      "name": "Nelson Bowen",
+      "role": "Managing Partner",
+      "bio": "Leads the firm's operations and developer-side desks. Background in finance, accounting and venture capital before building Paterson.",
+      "phone": "+1 (716) 351 3095",
+      "email": "Nelson.Bowen@patersoncompany.com",
+      "linkedin": "https://www.linkedin.com/in/nelson-bowen-paterson/",
+      "order": 2,
+      "level": "Managing Partner",
+      "area": "NYC | Miami",
+      "photoUrl": "",
+      "initials": "NB"
+    },
+    {
+      "id": "saved-bradley-mcnairn",
+      "name": "Bradley McNairn",
+      "role": "Consultant",
+      "bio": "Focuses on commercial and residential construction across New York City, bringing a disciplined, detail-oriented approach shaped by his background as a former Royal Marines Commando.",
+      "phone": "+1 (716) 902 6751",
+      "email": "Bradley.McNairn@patersoncompany.com",
+      "linkedin": "https://www.linkedin.com/in/bradleymcnairn/",
+      "order": 3,
+      "level": "Consultant",
+      "area": "NYC",
+      "photoUrl": "",
+      "initials": "BM"
+    },
+    {
+      "id": "saved-santiago-pantoja",
+      "name": "Santiago Pantoja",
+      "role": "Consultant",
+      "bio": "Specialises in Florida’s custom home market, bringing real estate experience and a strong understanding of construction through his family’s established business in Mexico City.",
+      "phone": "+1 (904) 746 0012",
+      "email": "Santiago.Pantoja@patersoncompany.com",
+      "linkedin": "https://www.linkedin.com/in/santiago-pantoja-593a47211/",
+      "order": 4,
+      "level": "Consultant",
+      "area": "Miami",
+      "photoUrl": "",
+      "initials": "SP"
+    }
+  ]
+}

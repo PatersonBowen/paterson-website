@@ -183,4 +183,8 @@ await import("./guides.mjs");
 // Market Watch (publishes nothing until content/market-watch.js has entries).
 await import("./market-watch.mjs");
 
+// Team and live-role data (read from Airtable once per build) and the sitemap that lists the live roles.
+await import("./data-snapshot.mjs");
+await import("./sitemap.mjs");
+
 console.log(`SEO build OK: ${ROUTES.length + 2 + GUIDE_PAGES.length} pages + assets -> public/` + (writeSource ? " (index.html rewritten)" : ""));
