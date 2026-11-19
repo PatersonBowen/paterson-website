@@ -32,6 +32,65 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-19 */
+  {
+    slug: "industry-insight-every-fit-out-has-a-price",
+    title: "Industry Insight: Every Week of Fit-Out Has a Price",
+    date: "2026-11-19",
+    market: "New York",
+    type: "Industry Insight",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7529189732426326016",
+    // Photo credits are printed on slides 1 and 5; repeated here so the licence attribution is also in the page text.
+    imageCredit:
+      "Image credits: slide 1, Saks Fifth Avenue, photo by Ajay Suresh / Wikimedia Commons, CC BY 2.0 (modified). Slide 5, Apple Fifth Avenue, photo by Ed Uthman, MD / Wikimedia Commons, CC BY-SA 2.5 (modified).",
+    carousel: {
+      label: "Slides from the LinkedIn post: Industry Insight on the cost of a week of fit-out on Upper Fifth Avenue, the world's most expensive retail street",
+      images: [
+        "industry-insight-every-fit-out-has-a-price-1.jpg",
+        "industry-insight-every-fit-out-has-a-price-2.jpg",
+        "industry-insight-every-fit-out-has-a-price-3.jpg",
+        "industry-insight-every-fit-out-has-a-price-4.jpg",
+        "industry-insight-every-fit-out-has-a-price-5.jpg",
+      ],
+      alts: [
+        "Slide 1 of 5, Industry Insight: every week of fit-out has a price. The world's most expensive retail street, and what it means for the people who build there. The corner of Saks Fifth Avenue with its row of flags.",
+        "Slide 2 of 5, Upper Fifth Avenue, 49th to 60th Street: $2,700 per sq ft a year, up 35% in twelve months. Ranking: Upper Fifth Avenue, New York, $2,700; New Bond Street, London, $2,230; Via Montenapoleone, Milan, $2,160. Source: Cushman & Wakefield, Main Streets Across the World 2026.",
+        "Slide 3 of 5, What a week costs. $685K for 13,200 sq ft, Coach at Olympic Tower. $797K for 15,345 sq ft, Urban Outfitters at 575 Fifth. $1.19M for 23,000 sq ft, David Yurman at 685 Fifth. Illustrative: $2,700 average times store size divided by 52. Actual lease terms are not public.",
+        "Slide 4 of 5, How the best teams protect the programme. 01 Long-lead items locked in precon: stone, millwork and specialist glazing are secured before site. 02 Landlord rules planned from day one: deliveries, noise and working hours shape the schedule. 03 Approvals built into the programme: mock-ups and brand sign-off get their own dates.",
+        "Slide 5 of 5, What's the hardest part of a flagship on Fifth? Tell us in the comments. The Apple Fifth Avenue glass cube.",
+      ],
+    },
+    summary:
+      "Upper Fifth Avenue is again the world's most expensive retail street at $2,700 per sq ft a year, up 35%. At that cost, the schedule becomes the most valuable part of a fit-out.",
+    stats: [
+      { value: "$2,700", label: "per sq ft a year on Upper Fifth Avenue, up 35% in twelve months.", source: "Cushman & Wakefield, Main Streets Across the World 2026" },
+      { value: "$685K", label: "an illustrative week of rent on 13,200 sq ft, the size of Coach's new space at Olympic Tower.", source: "Paterson calculation: $2,700 average x store size / 52. Actual lease terms are not public." },
+      { value: "$1.19M", label: "an illustrative week of rent on 23,000 sq ft, the size of David Yurman's new flagship at 685 Fifth.", source: "Paterson calculation: $2,700 average x store size / 52. Actual lease terms are not public." },
+    ],
+    intro: [
+      // CONFIRM: the $2,700 (up 35%), New Bond Street $2,230 and Via Montenapoleone $2,160 are verified in Cushman & Wakefield's 17 Nov 2026 release. The release does not define "Upper Fifth Avenue" as 49th to 60th Street; the graphic does.
+      "Upper Fifth Avenue is once again the most expensive retail street in the world. Cushman & Wakefield's Main Streets Across the World 2026 report puts average rents at $2,700 per sq ft a year, up 35% in twelve months. London's New Bond Street is second at $2,230.",
+      // CONFIRM: the Coach (13,200 sq ft, 645 Fifth Avenue/Olympic Tower) and David Yurman (23,000 sq ft, 685 Fifth Avenue) leases are sourced (Commercial Observer, May and June 2026). The weekly figures are arithmetic on the average, not lease rents; lease terms are not public.
+      // NOTE: slide 3 also shows Urban Outfitters at 575 Fifth (15,345 sq ft, about $797K a week). 575 Fifth is at 47th Street, below the 49th to 60th Street stretch the $2,700 average covers, and Commercial Observer reported an asking rent of about $3 million a year for it. Left out of this text; it remains in the slide.
+      "Apply that average to some of this year's Fifth Avenue leases and the numbers get serious. A 13,200 sq ft store, the size of Coach's new space at Olympic Tower, works out at about $685,000 a week. At 23,000 sq ft, the size of David Yurman's new flagship, it is close to $1.2 million. These are illustrations: the $2,700 average multiplied by store size and divided by 52. Actual lease terms are not public.",
+      "At that cost, the schedule becomes the most valuable part of a fit-out. The best teams protect it in three ways.",
+      "Long-lead items such as stone, custom millwork and specialist glazing are secured in preconstruction, not chased on site.",
+      "Landlord rules on deliveries, noise and working hours shape the programme from day one.",
+      "Mock-ups and brand approvals get their own dates, not a slot at the end.",
+    ],
+    hiringView: [
+      "The project managers and superintendents who do this well plan for it before the first wall comes down.",
+      // CONFIRM: the post asks readers to answer in the comments; adapted here for the website.
+      "What is the hardest part of delivering a flagship on a street like this? We would like to hear from you.",
+    ],
+    sources: [
+      { name: "Cushman & Wakefield: Fifth Avenue reclaims title of world's most expensive retail street (November 2026)", url: "https://www.cushmanwakefield.com/en/news/2026/11/fifth-avenue-reclaims-most-expensive-retail-street-ranking" },
+      { name: "Commercial Observer: Coach lease at 645 Fifth Avenue (May 2026)", url: "https://commercialobserver.com/2026/05/coach-lease-oxford-645-fifth-avenue/" },
+      { name: "Commercial Observer: David Yurman lease at 685 Fifth Avenue (June 2026)", url: "https://commercialobserver.com/2026/06/david-yurman-lease-685-fifth-avenue-retail-condo/" },
+      { name: "Commercial Observer: Urban Outfitters lease at 575 Fifth Avenue (April 2026)", url: "https://commercialobserver.com/2026/04/urban-outfitters-lease-575-fifth-avenue/" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-11-18 */
   {
     slug: "behind-the-build-faena-residences-miami",
