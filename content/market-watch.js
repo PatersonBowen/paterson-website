@@ -32,6 +32,75 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-20 */
+  {
+    slug: "market-insight-miami-dade-170-million-record-home",
+    title: "Market Insight: Miami-Dade's $170 Million Record Home",
+    date: "2026-11-20",
+    market: "Miami",
+    type: "Market Insight",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7529579416318873601",
+    imageCredit: "Renderings: Ferris Rafauli Design.",
+    carousel: {
+      label: "Slides from the LinkedIn post: Market Insight on the $170 million sale of 7 Indian Creek Island Road, a Miami-Dade record, before the home was finished",
+      images: [
+        "market-insight-miami-record-home-1.jpg",
+        "market-insight-miami-record-home-2.jpg",
+        "market-insight-miami-record-home-3.jpg",
+        "market-insight-miami-record-home-4.jpg",
+        "market-insight-miami-record-home-5.jpg",
+      ],
+      alts: [
+        "Slide 1 of 5, Market Insight: Miami's record home wasn't finished. $170M paid for 7 Indian Creek Island Road while still under construction. A Miami-Dade record. A rendering of a limestone estate with a pool terrace and dock on the bay.",
+        "Slide 2 of 5, The site. $30M paid for the two-acre plot in 2020, with 200 feet of Biscayne Bay frontage. An aerial rendering of the pool terraces, lawn and dock facing the water.",
+        "Slide 3 of 5, The build. 28,000 square feet, clad in limestone, with a 135-foot dock and a 38-foot skylight over the stair. A rendering of a spiral staircase in a panelled hall.",
+        "Slide 4 of 5, The logistics. One bridge in. One way out. Every delivery, crane and trade passes one guarded bridge. Permits run through the village, Miami-Dade and the state. A rendering of the gated entrance framed by palms.",
+        "Slide 5 of 5, The previous record. $120M paid for a 2.5-acre Star Island estate in 2025, reportedly bought as a teardown. At this level, buyers pay for the land and build the house. Who runs those builds?",
+      ],
+    },
+    summary:
+      "An estate still under construction at 7 Indian Creek Island Road sold for $170 million in March 2026, a new Miami-Dade record, passing the previous record of $120 million.",
+    stats: [
+      { value: "$170M", label: "paid for 7 Indian Creek Island Road in March 2026 while still under construction, a Miami-Dade record.", source: "Coldwell Banker listing record for 7 Indian Creek Island Road" },
+      { value: "$120M", label: "the previous Miami-Dade record, paid for 26 Star Island Drive in 2025.", source: "The Real Deal" },
+    ],
+    facts: [
+      ["Property", "7 Indian Creek Island Road, Indian Creek Village"],
+      ["Sale Price", "$170 Million, March 2026"],
+      ["Previous Record", "$120 Million, 26 Star Island Drive, 2025"],
+    ],
+    intro: [
+      "The most expensive home ever sold in Miami-Dade County changed hands before construction was complete.",
+      "In March 2026, an estate still under construction at 7 Indian Creek Island Road sold for $170 million, setting a new county record.",
+      // The Coldwell Banker listing page confirms: sold $170,000,000 on 2 March 2026 (listed $200,000,000 in November 2025), "Under Construction", 27,889 sq ft living area, 200 ft of waterfront, a limestone facade,
+      // a 38-foot skylight over the staircase and a private dock. The buyer is deliberately not named here or in the sources.
+      // CONFIRM: the 135 ft dock length is on the graphic only (the page gives no length). The lot is 80,000 sq ft (about 1.84 acres) on the listing; the graphic says two-acre.
+      // The sellers buying the site in 2020 for $30 million is reported (month not confirmed). Only one source names Ferris Rafauli as the designer.
+      "The sellers bought the site in November 2020 for $30 million and spent the following years building a limestone-clad estate designed by Ferris Rafauli. The nearly 28,000 sq ft residence has 200 feet of Biscayne Bay frontage, a private dock and a 38 ft skylight above its grand staircase.",
+      // The $120 million 26 Star Island Drive sale, the 2.5-acre lot and the reported teardown are sourced (The Real Deal, Miami New Times).
+      "The sale passed the previous Miami-Dade record of $120 million, set by 26 Star Island Drive in 2025. That 2.5-acre estate was reportedly bought as a teardown.",
+      "At the top of the South Florida market, projects like this demand more than exceptional design and substantial capital. They need a construction team that can coordinate complex logistics, manage demanding clients and deliver an exceptional level of finish.",
+      // CONFIRM: the single guarded entrance (one bridge) and the village, Miami-Dade and state permitting route are from the post; no source was found for either.
+      "On Indian Creek, where access is controlled through a single guarded entrance, even moving trades, materials and equipment adds another layer of coordination. Permits run through the village, Miami-Dade and the state.",
+    ],
+    team: [
+      ["Architectural Design", "Ferris Rafauli Design"],
+      ["Listing Agency", "Coldwell Banker Realty"],
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      "For the project managers and superintendents involved, delivering a residence of this scale takes a particularly specialised skill set.",
+      // CONFIRM: the post asks readers to answer in the comments; adapted here for the website.
+      "If you build custom homes in South Florida, what is the hardest part of delivering a project at this level? We would like to hear from you.",
+    ],
+    sources: [
+      // CONFIRM: the "Miami-Dade record" for the $170 million sale is reported by several outlets, all of which name the buyer in the headline or address, so none is linked here. The listing page above does not state the record.
+      { name: "Coldwell Banker Realty: 7 Indian Creek Island Road, listing and sales history", url: "https://www.coldwellbankerhomes.com/fl/indian-creek-village/7-indian-creek-island-rd/pid_68409299" },
+      { name: "The Real Deal: Vlad Doronin sells waterfront Star Island estate for $120M (March 2025)", url: "https://therealdeal.com/miami/2025/03/07/vlad-doronin-sells-waterfront-star-island-estate-for-120m" },
+      { name: "Miami New Times: Miami Beach $120M mansion sale sets record in Miami-Dade", url: "https://www.miaminewtimes.com/news/miami-beach-120m-mansion-sale-sets-record-in-miami-dade-22657096" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-11-19 */
   {
     slug: "industry-insight-every-fit-out-has-a-price",
