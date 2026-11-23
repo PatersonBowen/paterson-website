@@ -32,6 +32,56 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-23 */
+  {
+    slug: "behind-the-build-oppenheimer-headquarters-32-old-slip",
+    title: "Behind the Build: Oppenheimer Headquarters, 32 Old Slip",
+    date: "2026-11-23",
+    market: "New York",
+    type: "Behind The Build",
+    image: "behind-the-build-oppenheimer-headquarters-32-old-slip.jpg",
+    imageAlt: "Behind the Build graphic: Oppenheimer, 32 Old Slip. $66M to fit out 220,000 sq ft for a new Financial District headquarters. 1.9% Midtown prime office vacancy and 18.2% US office vacancy, over a view of Lower Manhattan towers",
+    imageCredit: "Photo: Wikimedia Commons, CC BY-SA. Data: CBRE, Q3 2026.",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7530614317595910145",
+    summary:
+      "Oppenheimer & Co. is moving its headquarters to 32 Old Slip, where a $66 million fit-out of around 220,000 sq ft across six floors targets a phased move-in from early 2028.",
+    facts: [
+      ["Development", "Oppenheimer & Co. Headquarters"],
+      ["Value", "$66 Million"],
+      ["Location", "32 Old Slip, Financial District, Manhattan"],
+    ],
+    intro: [
+      // Confirmed (Oppenheimer press release, 9 Nov 2026): the move from 85 Broad Street to 32 Old Slip, roots at 2 Wall Street in 1881, about 220,000 sq ft across six full floors of the 36-story building,
+      // a dedicated conference center and expanded hospitality spaces, Gensler, and a phased move-in targeted to begin in the first quarter of 2028. "A few blocks" from 2 Wall Street is from the post.
+      "Oppenheimer & Co. is moving its headquarters from 85 Broad Street to 32 Old Slip, staying in Lower Manhattan a few blocks from 2 Wall Street, where the firm's roots date back to 1881.",
+      // Confirmed: the roughly $66 million investment by RXR and Oppenheimer (Governor's announcement, Bisnow). CONFIRM: "trading infrastructure" is not in the press release, which says "state-of-the-art workplace infrastructure".
+      "The $66 million investment by Oppenheimer and RXR will renovate and fit out around 220,000 sq ft across six full floors of the 36-storey tower, including trading infrastructure, a dedicated conference centre and expanded hospitality space for clients. Gensler is designing the space, with a phased move-in targeted to begin in the first quarter of 2028.",
+      // Confirmed: about 270,000 sq ft at 85 Broad Street (attributed by Bisnow to a JLL spokesperson).
+      "The firm is leaving around 270,000 sq ft at 85 Broad Street, taking less space and investing to make it work harder.",
+      // CONFIRM: the 1.9% Midtown prime vacancy and 18.2% US office vacancy (CBRE, Q3 2026 per the graphic) were not found. CBRE's Midtown page (Nov 2026) gives overall availability of 12.5%,
+      // and a Cushman & Wakefield figure of 26.7% is quoted for western Financial District. Check the CBRE source before relying on either number.
+      "The timing reflects a tight market. CBRE puts prime office vacancy in Midtown at just 1.9%, against 18.2% for US offices overall.",
+      "That leaves roughly 15 months from announcement to first move-in. In that time, trading floors with demanding technology and MEP requirements have to be designed, priced, built and commissioned in a tower where other tenants are already at work.",
+    ],
+    team: [
+      ["Client", "Oppenheimer & Co. Inc."],
+      ["Landlord", "RXR"],
+      ["Design Architect", "Gensler"],
+      // CONFIRM: JLL is confirmed as tenant advisor (it represented Oppenheimer); no source names JLL, or anyone, as project manager.
+      ["Tenant Advisor & Project Management", "JLL"],
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      "Projects like this rely on preconstruction, project management and MEP leadership who can deliver complex interiors to a fixed date.",
+      "If that is you, or you are interested in opportunities in the space, don't hesitate to reach out to the team.",
+    ],
+    sources: [
+      { name: "Oppenheimer: Oppenheimer Announces New Headquarters (November 2026)", url: "https://oppenheimer.com/news-media/2026/press-release/oppenheimer-announces-new-headquarters" },
+      { name: "Governor Hochul: Oppenheimer Holdings Inc. to Establish New $66 Million Manhattan Headquarters (November 2026)", url: "https://governor.ny.gov/news/governor-hochul-announces-oppenheimer-holdings-inc-establish-new-66-million-manhattan" },
+      { name: "Bisnow: RXR Signs Investment Bank To 220K SF Lease In FiDi", url: "https://www.bisnow.com/news/new-york/office/rxr-signs-investment-bank-to-220k-sf-in-fidi-office" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-11-20 */
   {
     slug: "market-insight-miami-dade-170-million-record-home",
