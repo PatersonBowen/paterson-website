@@ -32,6 +32,60 @@
 // never imply Paterson worked on a project unless that is true.
 
 export const ENTRIES = [
+  /* ---------------------------------------------------------- 2026-11-24 */
+  {
+    slug: "behind-the-build-101-franklin-tribeca",
+    title: "Behind the Build: 101 Franklin, Tribeca",
+    date: "2026-11-24",
+    market: "New York",
+    type: "Behind The Build",
+    image: "behind-the-build-101-franklin-tribeca.jpg",
+    imageAlt: "Behind the Build graphic: 101 Franklin, Tribeca. A $305 million construction loan to build a stripped 1948 office frame into 72 luxury condos, with residences priced from $4 million to $20 million and 21 storeys, shown in two red-brick renderings",
+    imageCredit: "Rendering: Steven Harris Architects.",
+    linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7530984497249411073",
+    summary:
+      "Apollo has provided a $305 million construction loan, arranged by Newmark, to turn a former government office building at 101 Franklin in Tribeca into 72 luxury condominiums.",
+    facts: [
+      ["Development", "101 Franklin"],
+      ["Construction Financing", "$305 Million"],
+      ["Location", "Franklin and Church Streets, Tribeca, Manhattan"],
+    ],
+    intro: [
+      // Confirmed (Newmark press release, 23 Nov 2026; REBusinessOnline): the $305 million loan from Apollo, arranged by Newmark for Skylight Real Estate Partners, Cannon Hill Capital Partners and TPG,
+      // described as among the largest construction loans for a luxury condominium development in New York City this year.
+      "Apollo has provided a $305 million construction loan for 101 Franklin, with Newmark arranging the financing. Newmark describes it as one of the largest construction loans for a luxury condominium development in New York City this year.",
+      // CONFIRM: the 1948 build date, the former Human Resources Administration and Department of Social Services use, the vacancy since 2017 and the strip-back to a concrete frame are from the post;
+      // none of the sources that could be read (Newmark release, REBusinessOnline, securities.io) states the building's history.
+      "Originally built in 1948, the building once housed New York City's Human Resources Administration and Department of Social Services. Vacant since 2017, it has since been stripped back to its concrete frame.",
+      // Confirmed: 72 residences in two- to five-bedroom layouts. CONFIRM: 21 storeys and four added floors are from the post and the graphic; one search summary says a 23-story building. The $4 million to $20 million price range
+      // is reported but was not found on a page that could be read; Corcoran Sunshine Marketing Group as sales firm is from the post, and no source found names a sales firm.
+      "Skylight Real Estate Partners, Cannon Hill Capital Partners and TPG are transforming the former government building into a 21-storey residential development, adding four floors to the existing structure and delivering 72 two- to five-bedroom condominiums. Reported pricing ranges from $4 million to $20 million, with Corcoran Sunshine Marketing Group handling sales.",
+      // CONFIRM: the 2,800 new development units at the end of August, the lowest level since 2014, is reported by one source; a later Q3 report put inventory at 3,027 units.
+      // "Tribeca's largest new development project in a decade" is from the post; no source found makes that claim.
+      "The timing reflects a constrained market. Manhattan ended August with approximately 2,800 new development units available, the lowest level since 2014. At 72 residences, 101 Franklin is also Tribeca's largest new development project in a decade.",
+      "Adding new floors and an entirely new façade to a postwar concrete structure, while introducing modern residential services into floor plates originally designed for government offices, presents a very different discipline from ground-up construction.",
+    ],
+    team: [
+      ["Developers", "Skylight Real Estate Partners, Cannon Hill Capital Partners, TPG"],
+      ["Lender", "Apollo Global Management, Inc."],
+      ["Debt Advisor", "Newmark"],
+      ["Design Architect", "Steven Harris Architects LLP"],
+      ["Executive Architect", "Hill West Architects"],
+      ["Interior Design", "Rees Roberts + Partners (RRP)"],
+      // CONFIRM: Corcoran Sunshine Marketing Group is from the post; no source found names a sales and marketing firm.
+      ["Sales & Marketing", "Corcoran Sunshine Marketing Group"],
+    ],
+    hiringHeading: "For Those Who Build",
+    hiringView: [
+      "Projects like this rely on project managers, superintendents and MEP leadership who are as comfortable working with existing structures as they are delivering new ones.",
+      "If that is the work you do, we would like to hear from you.",
+    ],
+    sources: [
+      { name: "Newmark: Newmark Arranges $305 Million Construction Loan for Luxury Condominium Development at 101 Franklin in Tribeca (November 2026)", url: "https://www.nmrk.com/insights/press-releases/newmark-arranges-305-million-construction-loan-for-luxury-condominium-development-at-101-franklin-in-tribeca" },
+      { name: "REBusinessOnline: Partnership Receives $305M in Construction Financing for Manhattan Multifamily Project (November 2026)", url: "https://rebusinessonline.com/partnership-receives-305m-in-construction-financing-for-manhattan-multifamily-project/" },
+    ],
+  },
+
   /* ---------------------------------------------------------- 2026-11-23 */
   {
     slug: "behind-the-build-oppenheimer-headquarters-32-old-slip",
